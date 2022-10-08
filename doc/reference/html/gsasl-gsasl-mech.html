@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gsasl-mech: GNU SASL API Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GNU SASL API Reference Manual">
+<link rel="up" href="intro.html" title="GNU SASL API Reference Manual">
+<link rel="prev" href="gsasl-gsasl.html" title="gsasl">
+<link rel="next" href="gsasl-gsasl-compat.html" title="gsasl-compat">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gsasl-gsasl-mech.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="intro.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gsasl-gsasl.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gsasl-gsasl-compat.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gsasl-gsasl-mech"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gsasl-gsasl-mech.top_of_page"></a>gsasl-mech</span></h2>
+<p>gsasl-mech</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gsasl-gsasl-mech.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gsasl-gsasl-mech.html#Gsasl-init-function" title="Gsasl_init_function ()">*Gsasl_init_function</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gsasl-gsasl-mech.html#Gsasl-done-function" title="Gsasl_done_function ()">*Gsasl_done_function</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gsasl-gsasl-mech.html#Gsasl-start-function" title="Gsasl_start_function ()">*Gsasl_start_function</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gsasl-gsasl-mech.html#Gsasl-step-function" title="Gsasl_step_function ()">*Gsasl_step_function</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gsasl-gsasl-mech.html#Gsasl-finish-function" title="Gsasl_finish_function ()">*Gsasl_finish_function</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gsasl-gsasl-mech.html#Gsasl-code-function" title="Gsasl_code_function ()">*Gsasl_code_function</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl-mech.html#gsasl-register" title="gsasl_register ()">gsasl_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl-mech.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl-mech.html#Gsasl-mechanism-functions" title="struct Gsasl_mechanism_functions">Gsasl_mechanism_functions</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl-mech.html#Gsasl-mechanism" title="struct Gsasl_mechanism">Gsasl_mechanism</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl-mech.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl-mech.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="Gsasl-init-function"></a><h3>Gsasl_init_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+<span class="c_punctuation">(</span>*Gsasl_init_function<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-done-function"></a><h3>Gsasl_done_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*Gsasl_done_function<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-start-function"></a><h3>Gsasl_start_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+<span class="c_punctuation">(</span>*Gsasl_start_function<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                         <em class="parameter"><code><span class="type">void</span> **mech_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-step-function"></a><h3>Gsasl_step_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+<span class="c_punctuation">(</span>*Gsasl_step_function<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                        <em class="parameter"><code><span class="type">void</span> *mech_data</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *input</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> input_len</code></em>,
+                        <em class="parameter"><code><span class="type">char</span> **output</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> *output_len</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-finish-function"></a><h3>Gsasl_finish_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*Gsasl_finish_function<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                          <em class="parameter"><code><span class="type">void</span> *mech_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-code-function"></a><h3>Gsasl_code_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+<span class="c_punctuation">(</span>*Gsasl_code_function<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                        <em class="parameter"><code><span class="type">void</span> *mech_data</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *input</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> input_len</code></em>,
+                        <em class="parameter"><code><span class="type">char</span> **output</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> *output_len</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-register"></a><h3>gsasl_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_register (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                <em class="parameter"><code>const <a class="link" href="gsasl-gsasl-mech.html#Gsasl-mechanism" title="struct Gsasl_mechanism"><span class="type">Gsasl_mechanism</span></a> *mech</code></em>);</pre>
+<p>This function initialize given mechanism, and if successful, add it
+to the list of plugins that is used by the library.</p>
+<div class="refsect3">
+<a name="gsasl-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>pointer to libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mech</p></td>
+<td class="parameter_description"><p>plugin structure with information about plugin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-register.returns"></a><h4>Returns</h4>
+<p> <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> iff successful, otherwise <a class="link" href="gsasl-gsasl.html#GSASL-MALLOC-ERROR:CAPS"><code class="literal">GSASL_MALLOC_ERROR</code></a>.</p>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl-mech.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="Gsasl-mechanism-functions"></a><h3>struct Gsasl_mechanism_functions</h3>
+<pre class="programlisting">struct Gsasl_mechanism_functions {
+  Gsasl_init_function init;
+  Gsasl_done_function done;
+  Gsasl_start_function start;
+  Gsasl_step_function step;
+  Gsasl_finish_function finish;
+  Gsasl_code_function encode;
+  Gsasl_code_function decode;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-mechanism"></a><h3>struct Gsasl_mechanism</h3>
+<pre class="programlisting">struct Gsasl_mechanism {
+  const char *name;
+
+  struct Gsasl_mechanism_functions client;
+  struct Gsasl_mechanism_functions server;
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

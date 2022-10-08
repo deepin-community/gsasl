@@ -1,0 +1,421 @@
+# Spanish translation of libgsasl 1.7.4
+# Copyright (C) 2018 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gsasl package.
+#
+# Francisco Javier Serrador <fserrador@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: libgsasl 1.7.4\n"
+"Report-Msgid-Bugs-To: bug-gsasl@gnu.org\n"
+"POT-Creation-Date: 2021-01-01 17:34+0100\n"
+"PO-Revision-Date: 2018-05-01 10:45+0200\n"
+"Last-Translator: Francisco Javier Serrador <fserrador@gmail.com>\n"
+"Language-Team: Spanish <es@tp.org.es>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+#: src/error.c:46
+msgid "Libgsasl success"
+msgstr "Libgsasl correcto"
+
+#: src/error.c:47
+msgid "SASL mechanism needs more data"
+msgstr "Mecanismo SASL requiere más datos"
+
+#: src/error.c:48
+msgid "Unknown SASL mechanism"
+msgstr "Mecanismo SASL desconocido"
+
+#: src/error.c:50
+msgid "SASL mechanism called too many times"
+msgstr "Mecanismo SASL llamado demasiadas veces"
+
+#: src/error.c:52
+msgid "SASL function needs larger buffer (internal error)"
+msgstr "Función SASL requiere buffer mayor (error interno)"
+
+#: src/error.c:53
+msgid "Could not open file in SASL library"
+msgstr "No pudo abrir fichero en biblioteca SASL"
+
+#: src/error.c:54
+msgid "Could not close file in SASL library"
+msgstr "No pudo cerrar fichero en biblioteca SASL"
+
+#: src/error.c:55
+msgid "Memory allocation error in SASL library"
+msgstr "Reserva de memoria errónea en biblioteca SASL"
+
+#: src/error.c:56
+msgid "Base 64 coding error in SASL library"
+msgstr "Error codificando Base 64 en biblioteca SASL"
+
+#: src/error.c:57
+msgid "Low-level crypto error in SASL library"
+msgstr "Error criptográfico de bajo nivel en biblioteca SASL"
+
+#: src/error.c:60
+msgid ""
+"SASL mechanism needs gsasl_client_callback_anonymous() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retrollamada gsasl_client_callback_anonymous() "
+"(error de aplicación)"
+
+#: src/error.c:63
+msgid ""
+"SASL mechanism needs gsasl_client_callback_password() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_client_callback_password() "
+"(error de aplicación)"
+
+#: src/error.c:66
+msgid ""
+"SASL mechanism needs gsasl_client_callback_passcode() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_client_callback_passcode() "
+"(error de aplicación)"
+
+#: src/error.c:69
+msgid ""
+"SASL mechanism needs gsasl_client_callback_pin() callback (application error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_client_callback_pin() (error de "
+"aplicación)"
+
+#: src/error.c:72
+msgid ""
+"SASL mechanism needs gsasl_client_callback_authorization_id() callback "
+"(application error)"
+msgstr ""
+"Mecanismo SASL requiere retrollamada "
+"gsasl_client_callback_authorization_id() (error de aplicación)"
+
+#: src/error.c:75
+msgid ""
+"SASL mechanism needs gsasl_client_callback_authentication_id() callback "
+"(application error)"
+msgstr ""
+"Mecanismo SASL requiere retrollamada "
+"gsasl_client_callback_autentication_id() (error de aplicación)"
+
+#: src/error.c:78
+msgid ""
+"SASL mechanism needs gsasl_client_callback_service() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_client_callback_service() (error "
+"de aplicación)"
+
+#: src/error.c:81
+msgid ""
+"SASL mechanism needs gsasl_server_callback_validate() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_validate() "
+"(error de aplicación)"
+
+#: src/error.c:84
+msgid ""
+"SASL mechanism needs gsasl_server_callback_cram_md5() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_cram_md5() "
+"(error de aplicación)"
+
+#: src/error.c:87
+msgid ""
+"SASL mechanism needs gsasl_server_callback_digest_md5() callback "
+"(application error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_digest_md5() "
+"(error de aplicación)"
+
+#: src/error.c:90
+msgid ""
+"SASL mechanism needs gsasl_server_callback_external() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_external() "
+"(error de aplicación)"
+
+#: src/error.c:93
+msgid ""
+"SASL mechanism needs gsasl_server_callback_anonymous() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_anonymous() "
+"(error de aplicación)"
+
+#: src/error.c:96
+msgid ""
+"SASL mechanism needs gsasl_server_callback_realm() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_realm() (error "
+"de aplicación)"
+
+#: src/error.c:99
+msgid ""
+"SASL mechanism needs gsasl_server_callback_securid() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada  gsasl_server_callback_securid() "
+"(error de aplicación)"
+
+#: src/error.c:102
+msgid ""
+"SASL mechanism needs gsasl_server_callback_service() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_service() (error "
+"de aplicación)"
+
+#: src/error.c:105
+msgid ""
+"SASL mechanism needs gsasl_server_callback_gssapi() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_gssapi() (error "
+"de aplicación)"
+
+#: src/error.c:108
+msgid ""
+"SASL mechanism needs gsasl_server_callback_retrieve() callback (application "
+"error)"
+msgstr ""
+"Mecanismo SASL requiere retro-llamada gsasl_server_callback_retrieve() "
+"(error de aplicación)"
+
+#: src/error.c:111
+msgid "Failed to perform Unicode Normalization on string."
+msgstr "Falló para preformar Normalización Unicode en cadena."
+
+#: src/error.c:113
+msgid "Could not prepare internationalized (non-ASCII) string."
+msgstr "No pudo preparar cadena internacionalizada (no ASCII)."
+
+#: src/error.c:115
+msgid "SASL mechanism could not parse input"
+msgstr "Mecanismo SASL no podría interpretar entrada"
+
+#: src/error.c:116
+msgid "Error authenticating user"
+msgstr "Error autenticando usuario"
+
+#: src/error.c:118
+msgid "Cannot get internal library handle (library error)"
+msgstr "No puede obtener manipulador bibliotecario (error biblioteca)"
+
+#: src/error.c:119
+msgid "Integrity error in application payload"
+msgstr "Integridad errónea en aplicación de carga"
+
+#: src/error.c:120
+msgid "No more realms available (non-fatal)"
+msgstr "Sin más reinos disponibles (no-fatal)"
+
+#: src/error.c:122
+msgid "Client-side functionality not available in library (application error)"
+msgstr ""
+"Funcionalidad cliente lateral no disponible dentro de biblioteca (error "
+"aplicativo)"
+
+#: src/error.c:125
+msgid "Server-side functionality not available in library (application error)"
+msgstr ""
+"Funcionalidad servidor lateral no disponible dentro de biblioteca (error "
+"aplicativo)"
+
+#: src/error.c:128
+msgid ""
+"GSSAPI library could not deallocate memory in gss_release_buffer() in SASL "
+"library.  This is a serious internal error."
+msgstr ""
+"Biblioteca GSSAPI no pudo desreservar memoria en gss_release_buffer() de la "
+"biblioteca SASL. Éste es un error interno serio."
+
+#: src/error.c:132
+msgid ""
+"GSSAPI library could not understand a peer name in gss_import_name() in SASL "
+"library.  This is most likely due to incorrect service and/or hostnames."
+msgstr ""
+"Biblioteca GSSAPI no pudo comprender un nompre interconecato en "
+"gss_import_name() en bilioteca SASL.  Esto es más debido a un servicio "
+"incorrecto y/o nombre de anfitrión."
+
+#: src/error.c:136
+msgid ""
+"GSSAPI error in client while negotiating security context in "
+"gss_init_sec_context() in SASL library.  This is most likely due "
+"insufficient credentials or malicious interactions."
+msgstr ""
+"GSSAPI erróneo en cliente mientras negociando contexto garantizado en "
+"gss_init_sec_context() dentro de biblioteca SASL.  Esto es más similar "
+"debido a insuficientes credenciales o interacciones maliciosas."
+
+#: src/error.c:140
+msgid ""
+"GSSAPI error in server while negotiating security context in "
+"gss_accept_sec_context() in SASL library.  This is most likely due "
+"insufficient credentials or malicious interactions."
+msgstr ""
+"GSSAPI erróneo en servidor mientras negociando contexto garantizado en "
+"gss_accept_sec_context() dentro de biblioteca SASL.  Esto es más similar "
+"debido a insuficientes credenciales o interacciones maliciosas."
+
+#: src/error.c:144
+msgid ""
+"GSSAPI error while decrypting or decoding data in gss_unwrap() in SASL "
+"library.  This is most likely due to data corruption."
+msgstr ""
+"GSSAPI erróneo mentras descifra o cifra datos en gss_unwrap() dentro de "
+"biblioteca SASL.  Esto es más similar a corrupción de datos."
+
+#: src/error.c:147
+msgid ""
+"GSSAPI error while encrypting or encoding data in gss_wrap() in SASL library."
+msgstr ""
+"GSSAPI erróneo mientras cifraba o codificaba datos en  gss_wrap() dentro de "
+"biblioteca SASL."
+
+#: src/error.c:150
+msgid ""
+"GSSAPI error acquiring credentials in gss_acquire_cred() in SASL library.  "
+"This is most likely due to not having the proper Kerberos key available in /"
+"etc/krb5.keytab on the server."
+msgstr ""
+"GSSAPI erróneo adquiriendo credenciales en gss_acquire_cred() dentro de "
+"biblioteca SASL.  Esto es más parecido a no tener disponible la llave "
+"apropiada de Kerberos en /etc/krb5.keytab en el servidor."
+
+#: src/error.c:154
+msgid ""
+"GSSAPI error creating a display name denoting the client in "
+"gss_display_name() in SASL library.  This is probably because the client "
+"supplied bad data."
+msgstr ""
+"GSSAPI erróneo creando un nombre de pantalla denotando el cliente dentro del "
+"in gss_display_name() en la biblioteca SASL.  Esto es probablemente porque "
+"el cliente suministró datos equivocados."
+
+#: src/error.c:158
+msgid ""
+"Other entity requested integrity or confidentiality protection in GSSAPI "
+"mechanism but this is currently not implemented."
+msgstr ""
+"Otra entidad integradamente o confiadamente resolicita protección en "
+"mecanismo GSSAPI pero esto está actualmente no implementado."
+
+#: src/error.c:161
+msgid "Kerberos V5 initialization failure."
+msgstr "Inicialización de Kerberos V5 fallada."
+
+#: src/error.c:163
+msgid "Kerberos V5 internal error."
+msgstr "Error interno de Kerberos V5."
+
+#: src/error.c:165
+msgid "SecurID needs additional passcode."
+msgstr "SecurID requiere código contraseña adicional."
+
+#: src/error.c:167
+msgid "SecurID needs new pin."
+msgstr "SecurID requiere nuevo pin."
+
+#: src/error.c:169
+msgid "The provided library handle was invalid (application error)"
+msgstr ""
+"La biblioteca manipuladora proporcionada fue inválida (error de aplicación)"
+
+#: src/error.c:171
+msgid "No callback specified by caller (application error)."
+msgstr "Sin retrollamada especificada por llamador (arror aplicativo)"
+
+#: src/error.c:173
+msgid "Authentication failed because the anonymous token was not provided."
+msgstr ""
+"Autenticación fallada porque el nombre del token anónomo no era "
+"proporcionado."
+
+#: src/error.c:176
+msgid ""
+"Authentication failed because the authentication identity was not provided."
+msgstr ""
+"Autenticación fallada porque la identidad de autenticación no era "
+"proporcionado."
+
+#: src/error.c:179
+msgid ""
+"Authentication failed because the authorization identity was not provided."
+msgstr ""
+"Autenticación fallada porque la identidad autenticada no era proporcionado."
+
+#: src/error.c:182
+msgid "Authentication failed because the password was not provided."
+msgstr "Autenticación fallada porque la contraseña no era proporcionado."
+
+#: src/error.c:184
+msgid "Authentication failed because the passcode was not provided."
+msgstr "Autenticación fallada porque el código de paso no era proporcionado."
+
+#: src/error.c:186
+msgid "Authentication failed because the pin code was not provided."
+msgstr "Autenticación fallada porque el código chincheta no era proporcionado."
+
+#: src/error.c:188
+msgid "Authentication failed because the service name was not provided."
+msgstr ""
+"Autenticación fallada porque el nombre del servicio no era proporcionado."
+
+#: src/error.c:190
+msgid "Authentication failed because the host name was not provided."
+msgstr ""
+"Autenticación fallada porque el nombre del hospedante no era proporcionado."
+
+#: src/error.c:192
+msgid "GSSAPI error encapsulating token."
+msgstr "GSSAPI erróneo encapsulando token."
+
+#: src/error.c:194
+msgid "GSSAPI error decapsulating token."
+msgstr "GSSAPI erróneo desencapsulando token."
+
+#: src/error.c:196
+msgid "GSSAPI error getting OID for SASL mechanism name."
+msgstr "GSSAPI erróneo obteniendo OID para nombre de mecanismo SASL."
+
+#: src/error.c:198
+msgid "GSSAPI error testing for OID in OID set."
+msgstr "GSSAPI erróneo probando para OID en conjunto OID."
+
+#: src/error.c:200
+msgid "GSSAPI error releasing OID set."
+msgstr "GSSAPI erróneo liberando conjunto OID."
+
+#: src/error.c:202
+msgid "Authentication failed because a tls-unique CB was not provided."
+msgstr "Autenticación fallada porque un tls-único CB no fue proporcionada."
+
+#: src/error.c:204
+msgid "Callback failed to provide SAML20 IdP identifier."
+msgstr "Retrollamada fallada para proporcionar identificador IdP SAML20."
+
+#: src/error.c:206
+msgid "Callback failed to provide SAML20 redirect URL."
+msgstr "Retrollamada fallada al proporcionar redirección URL SAML20."
+
+#: src/error.c:208
+msgid "Callback failed to provide OPENID20 redirect URL."
+msgstr "Retrollamada fallada al proporcionar redirección URL OPENID20."
+
+#: src/error.c:230
+msgid "Libgsasl unknown error"
+msgstr "Error desconocido en libgsasl"

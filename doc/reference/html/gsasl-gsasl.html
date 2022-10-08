@@ -1,0 +1,3060 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gsasl: GNU SASL API Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GNU SASL API Reference Manual">
+<link rel="up" href="intro.html" title="GNU SASL API Reference Manual">
+<link rel="prev" href="intro.html" title="GNU SASL API Reference Manual">
+<link rel="next" href="gsasl-gsasl-mech.html" title="gsasl-mech">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gsasl-gsasl.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="intro.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="intro.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gsasl-gsasl-mech.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gsasl-gsasl"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gsasl-gsasl.top_of_page"></a>gsasl</span></h2>
+<p>gsasl</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gsasl-gsasl.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gsasl-gsasl.html#Gsasl-callback-function" title="Gsasl_callback_function ()">*Gsasl_callback_function</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-init" title="gsasl_init ()">gsasl_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-done" title="gsasl_done ()">gsasl_done</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-check-version" title="gsasl_check_version ()">gsasl_check_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-callback-set" title="gsasl_callback_set ()">gsasl_callback_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-callback" title="gsasl_callback ()">gsasl_callback</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-callback-hook-set" title="gsasl_callback_hook_set ()">gsasl_callback_hook_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-callback-hook-get" title="gsasl_callback_hook_get ()">gsasl_callback_hook_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-session-hook-set" title="gsasl_session_hook_set ()">gsasl_session_hook_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-session-hook-get" title="gsasl_session_hook_get ()">gsasl_session_hook_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-property-set" title="gsasl_property_set ()">gsasl_property_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-property-set-raw" title="gsasl_property_set_raw ()">gsasl_property_set_raw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-property-get" title="gsasl_property_get ()">gsasl_property_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-property-fast" title="gsasl_property_fast ()">gsasl_property_fast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-client-mechlist" title="gsasl_client_mechlist ()">gsasl_client_mechlist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-client-support-p" title="gsasl_client_support_p ()">gsasl_client_support_p</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-client-suggest-mechanism" title="gsasl_client_suggest_mechanism ()">gsasl_client_suggest_mechanism</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-server-mechlist" title="gsasl_server_mechlist ()">gsasl_server_mechlist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-server-support-p" title="gsasl_server_support_p ()">gsasl_server_support_p</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-client-start" title="gsasl_client_start ()">gsasl_client_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-server-start" title="gsasl_server_start ()">gsasl_server_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-step" title="gsasl_step ()">gsasl_step</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-step64" title="gsasl_step64 ()">gsasl_step64</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-finish" title="gsasl_finish ()">gsasl_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-encode" title="gsasl_encode ()">gsasl_encode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-decode" title="gsasl_decode ()">gsasl_decode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-mechanism-name" title="gsasl_mechanism_name ()">gsasl_mechanism_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-strerror" title="gsasl_strerror ()">gsasl_strerror</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-strerror-name" title="gsasl_strerror_name ()">gsasl_strerror_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-saslprep" title="gsasl_saslprep ()">gsasl_saslprep</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-nonce" title="gsasl_nonce ()">gsasl_nonce</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-random" title="gsasl_random ()">gsasl_random</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">size_t</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-hash-length" title="gsasl_hash_length ()">gsasl_hash_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-scram-secrets-from-salted-password" title="gsasl_scram_secrets_from_salted_password ()">gsasl_scram_secrets_from_salted_password</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-scram-secrets-from-password" title="gsasl_scram_secrets_from_password ()">gsasl_scram_secrets_from_password</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-simple-getpass" title="gsasl_simple_getpass ()">gsasl_simple_getpass</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-base64-to" title="gsasl_base64_to ()">gsasl_base64_to</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-base64-from" title="gsasl_base64_from ()">gsasl_base64_from</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-hex-to" title="gsasl_hex_to ()">gsasl_hex_to</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-hex-from" title="gsasl_hex_from ()">gsasl_hex_from</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gsasl-gsasl.html#gsasl-free" title="gsasl_free ()">gsasl_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#GSASL-API:CAPS" title="GSASL_API">GSASL_API</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#GSASL-VERSION:CAPS" title="GSASL_VERSION">GSASL_VERSION</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#GSASL-VERSION-MAJOR:CAPS" title="GSASL_VERSION_MAJOR">GSASL_VERSION_MAJOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#GSASL-VERSION-MINOR:CAPS" title="GSASL_VERSION_MINOR">GSASL_VERSION_MINOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#GSASL-VERSION-PATCH:CAPS" title="GSASL_VERSION_PATCH">GSASL_VERSION_PATCH</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#GSASL-VERSION-NUMBER:CAPS" title="GSASL_VERSION_NUMBER">GSASL_VERSION_NUMBER</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-rc" title="enum Gsasl_rc">Gsasl_rc</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-qop" title="enum Gsasl_qop">Gsasl_qop</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-cipher" title="enum Gsasl_cipher">Gsasl_cipher</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-saslprep-flags" title="enum Gsasl_saslprep_flags">Gsasl_saslprep_flags</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl">Gsasl</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session">Gsasl_session</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-property" title="enum Gsasl_property">Gsasl_property</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash">Gsasl_hash</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gsasl-gsasl.html#Gsasl-hash-length" title="enum Gsasl_hash_length">Gsasl_hash_length</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="Gsasl-callback-function"></a><h3>Gsasl_callback_function ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+<span class="c_punctuation">(</span>*Gsasl_callback_function<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                            <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                            <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-property" title="enum Gsasl_property"><span class="type">Gsasl_property</span></a> prop</code></em>);</pre>
+<p>Prototype of function that the application should implement.  Use
+<a class="link" href="gsasl-gsasl.html#gsasl-callback-set" title="gsasl_callback_set ()"><code class="function">gsasl_callback_set()</code></a> to inform the library about your callback
+function.</p>
+<p>It is called by the SASL library when it need some information
+from the application.  Depending on the value of <em class="parameter"><code>prop</code></em>
+, it should
+either set some property (e.g., username or password) using
+<a class="link" href="gsasl-gsasl.html#gsasl-property-set" title="gsasl_property_set ()"><code class="function">gsasl_property_set()</code></a>, or it should extract some properties (e.g.,
+authentication and authorization identities) using
+<a class="link" href="gsasl-gsasl.html#gsasl-property-fast" title="gsasl_property_fast ()"><code class="function">gsasl_property_fast()</code></a> and use them to make a policy decision,
+perhaps returning GSASL_AUTHENTICATION_ERROR or GSASL_OK
+depending on whether the policy permitted the operation.</p>
+<div class="refsect3">
+<a name="Gsasl-callback-function.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>session handle, may be NULL.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prop</p></td>
+<td class="parameter_description"><p>enumerated value of Gsasl_property type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="Gsasl-callback-function.returns"></a><h4>Returns</h4>
+<p> Any valid return code, the interpretation of which
+depend on the <em class="parameter"><code>prop</code></em>
+value.</p>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-init"></a><h3>gsasl_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_init (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> **ctx</code></em>);</pre>
+<p>This functions initializes libgsasl.  The handle pointed to by ctx
+is valid for use with other libgsasl functions iff this function is
+successful.  It also register all builtin SASL mechanisms, using
+<a class="link" href="gsasl-gsasl-mech.html#gsasl-register" title="gsasl_register ()"><code class="function">gsasl_register()</code></a>.</p>
+<div class="refsect3">
+<a name="gsasl-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>pointer to libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-init.returns"></a><h4>Returns</h4>
+<p> GSASL_OK iff successful, otherwise
+<a class="link" href="gsasl-gsasl.html#GSASL-MALLOC-ERROR:CAPS"><code class="literal">GSASL_MALLOC_ERROR</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-done"></a><h3>gsasl_done ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_done (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>);</pre>
+<p>This function destroys a libgsasl handle.  The handle must not be
+used with other libgsasl functions after this call.</p>
+<div class="refsect3">
+<a name="gsasl-done.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-check-version"></a><h3>gsasl_check_version ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gsasl_check_version (<em class="parameter"><code>const <span class="type">char</span> *req_version</code></em>);</pre>
+<p>Check GNU SASL Library version.</p>
+<p>See <a class="link" href="gsasl-gsasl.html#GSASL-VERSION:CAPS" title="GSASL_VERSION"><code class="literal">GSASL_VERSION</code></a> for a suitable <em class="parameter"><code>req_version</code></em>
+ string.</p>
+<p>This function is one of few in the library that can be used without
+a successful call to <a class="link" href="gsasl-gsasl.html#gsasl-init" title="gsasl_init ()"><code class="function">gsasl_init()</code></a>.</p>
+<div class="refsect3">
+<a name="gsasl-check-version.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>req_version</p></td>
+<td class="parameter_description"><p>version string to compare with, or NULL.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-check-version.returns"></a><h4>Returns</h4>
+<p> Check that the version of the library is at
+minimum the one given as a string in <em class="parameter"><code>req_version</code></em>
+and return the
+actual version string of the library; return NULL if the
+condition is not met.  If NULL is passed to this function no
+check is done and only the version string is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-callback-set"></a><h3>gsasl_callback_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_callback_set (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                    <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-callback-function" title="Gsasl_callback_function ()"><span class="type">Gsasl_callback_function</span></a> cb</code></em>);</pre>
+<p>Store the pointer to the application provided callback in the
+library handle.  The callback will be used, via <a class="link" href="gsasl-gsasl.html#gsasl-callback" title="gsasl_callback ()"><code class="function">gsasl_callback()</code></a>,
+by mechanisms to discover various parameters (such as username and
+passwords).  The callback function will be called with a
+Gsasl_property value indicating the requested behaviour.  For
+example, for <a class="link" href="gsasl-gsasl.html#GSASL-ANONYMOUS-TOKEN:CAPS"><code class="literal">GSASL_ANONYMOUS_TOKEN</code></a>, the function is expected to
+invoke gsasl_property_set(<em class="parameter"><code>CTX</code></em>
+, <a class="link" href="gsasl-gsasl.html#GSASL-ANONYMOUS-TOKEN:CAPS"><code class="literal">GSASL_ANONYMOUS_TOKEN</code></a>, "token")
+where "token" is the anonymous token the application wishes the
+SASL mechanism to use.  See the manual for the meaning of all
+parameters.</p>
+<div class="refsect3">
+<a name="gsasl-callback-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>handle received from <a class="link" href="gsasl-gsasl.html#gsasl-init" title="gsasl_init ()"><code class="function">gsasl_init()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cb</p></td>
+<td class="parameter_description"><p>pointer to function implemented by application.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-callback"></a><h3>gsasl_callback ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_callback (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-property" title="enum Gsasl_property"><span class="type">Gsasl_property</span></a> prop</code></em>);</pre>
+<p>Invoke the application callback.  The <em class="parameter"><code>prop</code></em>
+ value indicate what the
+callback is expected to do.  For example, for
+<a class="link" href="gsasl-gsasl.html#GSASL-ANONYMOUS-TOKEN:CAPS"><code class="literal">GSASL_ANONYMOUS_TOKEN</code></a>, the function is expected to invoke
+gsasl_property_set(<em class="parameter"><code>SCTX</code></em>
+, <a class="link" href="gsasl-gsasl.html#GSASL-ANONYMOUS-TOKEN:CAPS"><code class="literal">GSASL_ANONYMOUS_TOKEN</code></a>, "token") where
+"token" is the anonymous token the application wishes the SASL
+mechanism to use.  See the manual for the meaning of all
+parameters.</p>
+<p>Note that if no callback has been set by the application, but the
+obsolete callback interface has been used, this function will
+translate the old callback interface into the new.  This interface
+should be sufficient to invoke all callbacks, both new and old.</p>
+<div class="refsect3">
+<a name="gsasl-callback.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>handle received from <a class="link" href="gsasl-gsasl.html#gsasl-init" title="gsasl_init ()"><code class="function">gsasl_init()</code></a>, may be NULL to derive it
+from <em class="parameter"><code>sctx</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prop</p></td>
+<td class="parameter_description"><p>enumerated value of Gsasl_property type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-callback.returns"></a><h4>Returns</h4>
+<p> Returns whatever the application callback returns, or
+<a class="link" href="gsasl-gsasl.html#GSASL-NO-CALLBACK:CAPS"><code class="literal">GSASL_NO_CALLBACK</code></a> if no application was known.</p>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-callback-hook-set"></a><h3>gsasl_callback_hook_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_callback_hook_set (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                         <em class="parameter"><code><span class="type">void</span> *hook</code></em>);</pre>
+<p>Store application specific data in the libgsasl handle.</p>
+<p>The application data can be later (for instance, inside a callback)
+be retrieved by calling <a class="link" href="gsasl-gsasl.html#gsasl-callback-hook-get" title="gsasl_callback_hook_get ()"><code class="function">gsasl_callback_hook_get()</code></a>.  This is
+normally used by the application to maintain a global state between
+the main program and callbacks.</p>
+<div class="refsect3">
+<a name="gsasl-callback-hook-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hook</p></td>
+<td class="parameter_description"><p>opaque pointer to application specific data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-callback-hook-get"></a><h3>gsasl_callback_hook_get ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span> *
+gsasl_callback_hook_get (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>);</pre>
+<p>Retrieve application specific data from libgsasl handle.</p>
+<p>The application data is set using <a class="link" href="gsasl-gsasl.html#gsasl-callback-hook-set" title="gsasl_callback_hook_set ()"><code class="function">gsasl_callback_hook_set()</code></a>.  This
+is normally used by the application to maintain a global state
+between the main program and callbacks.</p>
+<div class="refsect3">
+<a name="gsasl-callback-hook-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-callback-hook-get.returns"></a><h4>Returns</h4>
+<p> Returns the application specific data, or NULL.</p>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-session-hook-set"></a><h3>gsasl_session_hook_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_session_hook_set (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                        <em class="parameter"><code><span class="type">void</span> *hook</code></em>);</pre>
+<p>Store application specific data in the libgsasl session handle.</p>
+<p>The application data can be later (for instance, inside a callback)
+be retrieved by calling <a class="link" href="gsasl-gsasl.html#gsasl-session-hook-get" title="gsasl_session_hook_get ()"><code class="function">gsasl_session_hook_get()</code></a>.  This is normally
+used by the application to maintain a per-session state between the
+main program and callbacks.</p>
+<div class="refsect3">
+<a name="gsasl-session-hook-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hook</p></td>
+<td class="parameter_description"><p>opaque pointer to application specific data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 0.2.14</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-session-hook-get"></a><h3>gsasl_session_hook_get ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span> *
+gsasl_session_hook_get (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>);</pre>
+<p>Retrieve application specific data from libgsasl session handle.</p>
+<p>The application data is set using <a class="link" href="gsasl-gsasl.html#gsasl-callback-hook-set" title="gsasl_callback_hook_set ()"><code class="function">gsasl_callback_hook_set()</code></a>.  This
+is normally used by the application to maintain a per-session state
+between the main program and callbacks.</p>
+<div class="refsect3">
+<a name="gsasl-session-hook-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-session-hook-get.returns"></a><h4>Returns</h4>
+<p> Returns the application specific data, or NULL.</p>
+</div>
+<p class="since">Since: 0.2.14</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-property-set"></a><h3>gsasl_property_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_property_set (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                    <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-property" title="enum Gsasl_property"><span class="type">Gsasl_property</span></a> prop</code></em>,
+                    <em class="parameter"><code>const <span class="type">char</span> *data</code></em>);</pre>
+<p>Make a copy of <em class="parameter"><code>data</code></em>
+ and store it in the session handle for the
+indicated property <em class="parameter"><code>prop</code></em>
+.</p>
+<p>You can immediately deallocate <em class="parameter"><code>data</code></em>
+ after calling this function,
+without affecting the data stored in the session handle.</p>
+<div class="refsect3">
+<a name="gsasl-property-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prop</p></td>
+<td class="parameter_description"><p>enumerated value of Gsasl_property type, indicating the
+type of data in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>zero terminated character string to store.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-property-set-raw"></a><h3>gsasl_property_set_raw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_property_set_raw (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                        <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-property" title="enum Gsasl_property"><span class="type">Gsasl_property</span></a> prop</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *data</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
+<p>Make a copy of <em class="parameter"><code>len</code></em>
+ sized <em class="parameter"><code>data</code></em>
+ and store a zero terminated version
+of it in the session handle for the indicated property <em class="parameter"><code>prop</code></em>
+.</p>
+<p>You can immediately deallocate <em class="parameter"><code>data</code></em>
+ after calling this function,
+without affecting the data stored in the session handle.</p>
+<p>Except for the length indicator, this function is identical to
+gsasl_property_set.</p>
+<div class="refsect3">
+<a name="gsasl-property-set-raw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prop</p></td>
+<td class="parameter_description"><p>enumerated value of Gsasl_property type, indicating the
+type of data in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>character string to store.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>length of character string to store.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-property-get"></a><h3>gsasl_property_get ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gsasl_property_get (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                    <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-property" title="enum Gsasl_property"><span class="type">Gsasl_property</span></a> prop</code></em>);</pre>
+<p>Retrieve the data stored in the session handle for given property
+<em class="parameter"><code>prop</code></em>
+, possibly invoking the application callback to get the value.</p>
+<p>The pointer is to live data, and must not be deallocated or
+modified in any way.</p>
+<p>This function will invoke the application callback, using
+<a class="link" href="gsasl-gsasl.html#gsasl-callback" title="gsasl_callback ()"><code class="function">gsasl_callback()</code></a>, when a property value is not known.</p>
+<p>If no value is known, and no callback is specified or if the
+callback fail to return data, and if any obsolete callback
+functions has been set by the application, this function will try
+to call these obsolete callbacks, and store the returned data as
+the corresponding property.  This behaviour of this function will
+be removed when the obsolete callback interfaces are removed.</p>
+<div class="refsect3">
+<a name="gsasl-property-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prop</p></td>
+<td class="parameter_description"><p>enumerated value of Gsasl_property type, indicating the
+type of data in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-property-get.returns"></a><h4>Returns</h4>
+<p> Return data for property, or NULL if no value known.</p>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-property-fast"></a><h3>gsasl_property_fast ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gsasl_property_fast (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+                     <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-property" title="enum Gsasl_property"><span class="type">Gsasl_property</span></a> prop</code></em>);</pre>
+<p>Retrieve the data stored in the session handle for given property
+<em class="parameter"><code>prop</code></em>
+.</p>
+<p>The pointer is to live data, and must not be deallocated or
+modified in any way.</p>
+<p>This function will not invoke the application callback.</p>
+<div class="refsect3">
+<a name="gsasl-property-fast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prop</p></td>
+<td class="parameter_description"><p>enumerated value of Gsasl_property type, indicating the
+type of data in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-property-fast.returns"></a><h4>Returns</h4>
+<p> Return property value, if known, or NULL if no value
+known.</p>
+</div>
+<p class="since">Since: 0.2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-client-mechlist"></a><h3>gsasl_client_mechlist ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_client_mechlist (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                       <em class="parameter"><code><span class="type">char</span> **out</code></em>);</pre>
+<p>Return a newly allocated string containing SASL names, separated by
+space, of mechanisms supported by the libgsasl client.  <em class="parameter"><code>out</code></em>
+ is
+allocated by this function, and it is the responsibility of caller
+to deallocate it.</p>
+<div class="refsect3">
+<a name="gsasl-client-mechlist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>newly allocated output character array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-client-mechlist.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if successful, or error code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-client-support-p"></a><h3>gsasl_client_support_p ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_client_support_p (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Decide whether there is client-side support for a specified
+mechanism.</p>
+<div class="refsect3">
+<a name="gsasl-client-support-p.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of SASL mechanism.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-client-support-p.returns"></a><h4>Returns</h4>
+<p> Returns 1 if the libgsasl client supports the named
+mechanism, otherwise 0.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-client-suggest-mechanism"></a><h3>gsasl_client_suggest_mechanism ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gsasl_client_suggest_mechanism (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *mechlist</code></em>);</pre>
+<p>Given a list of mechanisms, suggest which to use.</p>
+<div class="refsect3">
+<a name="gsasl-client-suggest-mechanism.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mechlist</p></td>
+<td class="parameter_description"><p>input character array with SASL mechanism names,
+separated by invalid characters (e.g. SPC).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-client-suggest-mechanism.returns"></a><h4>Returns</h4>
+<p> Returns name of "best" SASL mechanism supported by
+the libgsasl client which is present in the input string, or
+NULL if no supported mechanism is found.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-server-mechlist"></a><h3>gsasl_server_mechlist ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_server_mechlist (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                       <em class="parameter"><code><span class="type">char</span> **out</code></em>);</pre>
+<p>Return a newly allocated string containing SASL names, separated by
+space, of mechanisms supported by the libgsasl server.  <em class="parameter"><code>out</code></em>
+ is
+allocated by this function, and it is the responsibility of caller
+to deallocate it.</p>
+<div class="refsect3">
+<a name="gsasl-server-mechlist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>newly allocated output character array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-server-mechlist.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if successful, or error code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-server-support-p"></a><h3>gsasl_server_support_p ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_server_support_p (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Decide whether there is server-side support for a specified
+mechanism.</p>
+<div class="refsect3">
+<a name="gsasl-server-support-p.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of SASL mechanism.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-server-support-p.returns"></a><h4>Returns</h4>
+<p> Returns 1 if the libgsasl server supports the named
+mechanism, otherwise 0.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-client-start"></a><h3>gsasl_client_start ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_client_start (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                    <em class="parameter"><code>const <span class="type">char</span> *mech</code></em>,
+                    <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> **sctx</code></em>);</pre>
+<p>This functions initiates a client SASL authentication.  This
+function must be called before any other gsasl_client_*() function
+is called.</p>
+<div class="refsect3">
+<a name="gsasl-client-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mech</p></td>
+<td class="parameter_description"><p>name of SASL mechanism.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>pointer to client handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-client-start.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if successful, or error code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-server-start"></a><h3>gsasl_server_start ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_server_start (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl" title="Gsasl"><span class="type">Gsasl</span></a> *ctx</code></em>,
+                    <em class="parameter"><code>const <span class="type">char</span> *mech</code></em>,
+                    <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> **sctx</code></em>);</pre>
+<p>This functions initiates a server SASL authentication.  This
+function must be called before any other gsasl_server_*() function
+is called.</p>
+<div class="refsect3">
+<a name="gsasl-server-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ctx</p></td>
+<td class="parameter_description"><p>libgsasl handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mech</p></td>
+<td class="parameter_description"><p>name of SASL mechanism.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>pointer to server handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-server-start.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if successful, or error code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-step"></a><h3>gsasl_step ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_step (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+            <em class="parameter"><code>const <span class="type">char</span> *input</code></em>,
+            <em class="parameter"><code><span class="type">size_t</span> input_len</code></em>,
+            <em class="parameter"><code><span class="type">char</span> **output</code></em>,
+            <em class="parameter"><code><span class="type">size_t</span> *output_len</code></em>);</pre>
+<p>Perform one step of SASL authentication.  This reads data from the
+other end (from <em class="parameter"><code>input</code></em>
+ and <em class="parameter"><code>input_len</code></em>
+), processes it (potentially
+invoking callbacks to the application), and writes data to server
+(into newly allocated variable <em class="parameter"><code>output</code></em>
+ and <em class="parameter"><code>output_len</code></em>
+ that
+indicate the length of <em class="parameter"><code>output</code></em>
+).</p>
+<p>The contents of the <em class="parameter"><code>output</code></em>
+ buffer is unspecified if this functions
+returns anything other than <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> or <a class="link" href="gsasl-gsasl.html#GSASL-NEEDS-MORE:CAPS"><code class="literal">GSASL_NEEDS_MORE</code></a>.  If
+this function return <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> or <a class="link" href="gsasl-gsasl.html#GSASL-NEEDS-MORE:CAPS"><code class="literal">GSASL_NEEDS_MORE</code></a>, however, the
+<em class="parameter"><code>output</code></em>
+ buffer is allocated by this function, and it is the
+responsibility of caller to deallocate it by calling free
+(<em class="parameter"><code>output</code></em>
+).</p>
+<div class="refsect3">
+<a name="gsasl-step.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>input</p></td>
+<td class="parameter_description"><p>input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>input_len</p></td>
+<td class="parameter_description"><p>size of input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>output</p></td>
+<td class="parameter_description"><p>newly allocated output byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>output_len</p></td>
+<td class="parameter_description"><p>pointer to output variable with size of output byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-step.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if authenticated terminated
+successfully, <a class="link" href="gsasl-gsasl.html#GSASL-NEEDS-MORE:CAPS"><code class="literal">GSASL_NEEDS_MORE</code></a> if more data is needed, or error
+code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-step64"></a><h3>gsasl_step64 ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_step64 (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+              <em class="parameter"><code>const <span class="type">char</span> *b64input</code></em>,
+              <em class="parameter"><code><span class="type">char</span> **b64output</code></em>);</pre>
+<p>This is a simple wrapper around <a class="link" href="gsasl-gsasl.html#gsasl-step" title="gsasl_step ()"><code class="function">gsasl_step()</code></a> that base64 decodes
+the input and base64 encodes the output.</p>
+<p>The contents of the <em class="parameter"><code>b64output</code></em>
+ buffer is unspecified if this
+functions returns anything other than <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> or
+<a class="link" href="gsasl-gsasl.html#GSASL-NEEDS-MORE:CAPS"><code class="literal">GSASL_NEEDS_MORE</code></a>.  If this function return <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> or
+<a class="link" href="gsasl-gsasl.html#GSASL-NEEDS-MORE:CAPS"><code class="literal">GSASL_NEEDS_MORE</code></a>, however, the <em class="parameter"><code>b64output</code></em>
+ buffer is allocated by
+this function, and it is the responsibility of caller to deallocate
+it by calling free (<em class="parameter"><code>b64output</code></em>
+).</p>
+<div class="refsect3">
+<a name="gsasl-step64.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl client handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b64input</p></td>
+<td class="parameter_description"><p>input base64 encoded byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b64output</p></td>
+<td class="parameter_description"><p>newly allocated output base64 encoded byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-step64.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if authenticated terminated
+successfully, <a class="link" href="gsasl-gsasl.html#GSASL-NEEDS-MORE:CAPS"><code class="literal">GSASL_NEEDS_MORE</code></a> if more data is needed, or error
+code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-finish"></a><h3>gsasl_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_finish (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>);</pre>
+<p>Destroy a libgsasl client or server handle.  The handle must not be
+used with other libgsasl functions after this call.</p>
+<div class="refsect3">
+<a name="gsasl-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-encode"></a><h3>gsasl_encode ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_encode (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+              <em class="parameter"><code>const <span class="type">char</span> *input</code></em>,
+              <em class="parameter"><code><span class="type">size_t</span> input_len</code></em>,
+              <em class="parameter"><code><span class="type">char</span> **output</code></em>,
+              <em class="parameter"><code><span class="type">size_t</span> *output_len</code></em>);</pre>
+<p>Encode data according to negotiated SASL mechanism.  This might mean
+that data is integrity or privacy protected.</p>
+<p>The <em class="parameter"><code>output</code></em>
+ buffer is allocated by this function, and it is the
+responsibility of caller to deallocate it by calling free(<em class="parameter"><code>output</code></em>
+).</p>
+<div class="refsect3">
+<a name="gsasl-encode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>input</p></td>
+<td class="parameter_description"><p>input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>input_len</p></td>
+<td class="parameter_description"><p>size of input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>output</p></td>
+<td class="parameter_description"><p>newly allocated output byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>output_len</p></td>
+<td class="parameter_description"><p>size of output byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-encode.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if encoding was successful,
+otherwise an error code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-decode"></a><h3>gsasl_decode ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_decode (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>,
+              <em class="parameter"><code>const <span class="type">char</span> *input</code></em>,
+              <em class="parameter"><code><span class="type">size_t</span> input_len</code></em>,
+              <em class="parameter"><code><span class="type">char</span> **output</code></em>,
+              <em class="parameter"><code><span class="type">size_t</span> *output_len</code></em>);</pre>
+<p>Decode data according to negotiated SASL mechanism.  This might mean
+that data is integrity or privacy protected.</p>
+<p>The <em class="parameter"><code>output</code></em>
+ buffer is allocated by this function, and it is the
+responsibility of caller to deallocate it by calling free(<em class="parameter"><code>output</code></em>
+).</p>
+<div class="refsect3">
+<a name="gsasl-decode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>input</p></td>
+<td class="parameter_description"><p>input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>input_len</p></td>
+<td class="parameter_description"><p>size of input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>output</p></td>
+<td class="parameter_description"><p>newly allocated output byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>output_len</p></td>
+<td class="parameter_description"><p>size of output byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-decode.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if encoding was successful,
+otherwise an error code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-mechanism-name"></a><h3>gsasl_mechanism_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gsasl_mechanism_name (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-session" title="Gsasl_session"><span class="type">Gsasl_session</span></a> *sctx</code></em>);</pre>
+<p>This function returns the name of the SASL mechanism used in the
+session.  The pointer must not be deallocated by the caller.</p>
+<div class="refsect3">
+<a name="gsasl-mechanism-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sctx</p></td>
+<td class="parameter_description"><p>libgsasl session handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-mechanism-name.returns"></a><h4>Returns</h4>
+<p> Returns a zero terminated character array with the
+name of the SASL mechanism, or NULL if not known.</p>
+</div>
+<p class="since">Since: 0.2.28</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-strerror"></a><h3>gsasl_strerror ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gsasl_strerror (<em class="parameter"><code><span class="type">int</span> err</code></em>);</pre>
+<p>Convert return code to human readable string explanation of the
+reason for the particular error code.</p>
+<p>This string can be used to output a diagnostic message to the user.</p>
+<p>This function is one of few in the library that can be used without
+a successful call to <a class="link" href="gsasl-gsasl.html#gsasl-init" title="gsasl_init ()"><code class="function">gsasl_init()</code></a>.</p>
+<div class="refsect3">
+<a name="gsasl-strerror.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>libgsasl error code</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-strerror.returns"></a><h4>Returns</h4>
+<p> Returns a pointer to a statically allocated string
+containing an explanation of the error code <em class="parameter"><code>err</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-strerror-name"></a><h3>gsasl_strerror_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gsasl_strerror_name (<em class="parameter"><code><span class="type">int</span> err</code></em>);</pre>
+<p>Convert return code to human readable string representing the error
+code symbol itself.  For example, gsasl_strerror_name(<a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a>)
+returns the string "GSASL_OK".</p>
+<p>This string can be used to output a diagnostic message to the user.</p>
+<p>This function is one of few in the library that can be used without
+a successful call to <a class="link" href="gsasl-gsasl.html#gsasl-init" title="gsasl_init ()"><code class="function">gsasl_init()</code></a>.</p>
+<div class="refsect3">
+<a name="gsasl-strerror-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>libgsasl error code</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-strerror-name.returns"></a><h4>Returns</h4>
+<p> Returns a pointer to a statically allocated string
+containing a string version of the error code <em class="parameter"><code>err</code></em>
+, or NULL if
+the error code is not known.</p>
+</div>
+<p class="since">Since: 0.2.29</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-saslprep"></a><h3>gsasl_saslprep ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_saslprep (<em class="parameter"><code>const <span class="type">char</span> *in</code></em>,
+                <em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-saslprep-flags" title="enum Gsasl_saslprep_flags"><span class="type">Gsasl_saslprep_flags</span></a> flags</code></em>,
+                <em class="parameter"><code><span class="type">char</span> **out</code></em>,
+                <em class="parameter"><code><span class="type">int</span> *stringpreprc</code></em>);</pre>
+<p>Prepare string using SASLprep.  On success, the <em class="parameter"><code>out</code></em>
+ variable must
+be deallocated by the caller.</p>
+<div class="refsect3">
+<a name="gsasl-saslprep.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>in</p></td>
+<td class="parameter_description"><p>a UTF-8 encoded string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>any SASLprep flag, e.g., <a class="link" href="gsasl-gsasl.html#GSASL-ALLOW-UNASSIGNED:CAPS"><code class="literal">GSASL_ALLOW_UNASSIGNED</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>on exit, contains newly allocated output string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stringpreprc</p></td>
+<td class="parameter_description"><p>if non-NULL, will hold precise stringprep return code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-saslprep.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> on success, or
+<a class="link" href="gsasl-gsasl.html#GSASL-SASLPREP-ERROR:CAPS"><code class="literal">GSASL_SASLPREP_ERROR</code></a> on error.</p>
+</div>
+<p class="since">Since: 0.2.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-nonce"></a><h3>gsasl_nonce ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_nonce (<em class="parameter"><code><span class="type">char</span> *data</code></em>,
+             <em class="parameter"><code><span class="type">size_t</span> datalen</code></em>);</pre>
+<p>Store unpredictable data of given size in the provided buffer.</p>
+<div class="refsect3">
+<a name="gsasl-nonce.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>output array to be filled with unpredictable random data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>datalen</p></td>
+<td class="parameter_description"><p>size of output array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-nonce.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> iff successful.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-random"></a><h3>gsasl_random ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_random (<em class="parameter"><code><span class="type">char</span> *data</code></em>,
+              <em class="parameter"><code><span class="type">size_t</span> datalen</code></em>);</pre>
+<p>Store cryptographically strong random data of given size in the
+provided buffer.</p>
+<div class="refsect3">
+<a name="gsasl-random.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>output array to be filled with strong random data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>datalen</p></td>
+<td class="parameter_description"><p>size of output array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-random.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> iff successful.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-hash-length"></a><h3>gsasl_hash_length ()</h3>
+<pre class="programlisting"><span class="returnvalue">size_t</span>
+gsasl_hash_length (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash"><span class="type">Gsasl_hash</span></a> hash</code></em>);</pre>
+<p>Return the digest output size for hash function <em class="parameter"><code>hash</code></em>
+.  For
+example, gsasl_hash_length(GSASL_HASH_SHA256) returns
+GSASL_HASH_SHA256_SIZE which is 32.</p>
+<div class="refsect3">
+<a name="gsasl-hash-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>hash</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash"><code class="literal">Gsasl_hash</code></a> element, e.g., <a class="link" href="gsasl-gsasl.html#GSASL-HASH-SHA256:CAPS"><span class="type">GSASL_HASH_SHA256</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-hash-length.returns"></a><h4>Returns</h4>
+<p> size of supplied <a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash"><code class="literal">Gsasl_hash</code></a> element.</p>
+</div>
+<p class="since">Since: 1.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-scram-secrets-from-salted-password"></a><h3>gsasl_scram_secrets_from_salted_password ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_scram_secrets_from_salted_password
+                               (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash"><span class="type">Gsasl_hash</span></a> hash</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *salted_password</code></em>,
+                                <em class="parameter"><code><span class="type">char</span> *client_key</code></em>,
+                                <em class="parameter"><code><span class="type">char</span> *server_key</code></em>,
+                                <em class="parameter"><code><span class="type">char</span> *stored_key</code></em>);</pre>
+<p>Helper function to derive SCRAM ClientKey/ServerKey/StoredKey.  The
+<em class="parameter"><code>client_key</code></em>
+, <em class="parameter"><code>server_key</code></em>
+, and <em class="parameter"><code>stored_key</code></em>
+ buffers must have room to
+hold digest for given <em class="parameter"><code>hash</code></em>
+, use <a class="link" href="gsasl-gsasl.html#GSASL-HASH-MAX-SIZE:CAPS"><span class="type">GSASL_HASH_MAX_SIZE</span></a> which is
+sufficient for all hashes.</p>
+<div class="refsect3">
+<a name="gsasl-scram-secrets-from-salted-password.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>hash</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash"><code class="literal">Gsasl_hash</code></a> element, e.g., <a class="link" href="gsasl-gsasl.html#GSASL-HASH-SHA256:CAPS"><span class="type">GSASL_HASH_SHA256</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>salted_password</p></td>
+<td class="parameter_description"><p>input array with salted password.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client_key</p></td>
+<td class="parameter_description"><p>pre-allocated output array with derived client key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>server_key</p></td>
+<td class="parameter_description"><p>pre-allocated output array with derived server key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stored_key</p></td>
+<td class="parameter_description"><p>pre-allocated output array with derived stored key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-scram-secrets-from-salted-password.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if successful, or error code.</p>
+</div>
+<p class="since">Since: 1.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-scram-secrets-from-password"></a><h3>gsasl_scram_secrets_from_password ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_scram_secrets_from_password (<em class="parameter"><code><a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash"><span class="type">Gsasl_hash</span></a> hash</code></em>,
+                                   <em class="parameter"><code>const <span class="type">char</span> *password</code></em>,
+                                   <em class="parameter"><code>unsigned <span class="type">int</span> iteration_count</code></em>,
+                                   <em class="parameter"><code>const <span class="type">char</span> *salt</code></em>,
+                                   <em class="parameter"><code><span class="type">size_t</span> saltlen</code></em>,
+                                   <em class="parameter"><code><span class="type">char</span> *salted_password</code></em>,
+                                   <em class="parameter"><code><span class="type">char</span> *client_key</code></em>,
+                                   <em class="parameter"><code><span class="type">char</span> *server_key</code></em>,
+                                   <em class="parameter"><code><span class="type">char</span> *stored_key</code></em>);</pre>
+<p>Helper function to generate SCRAM secrets from a password.  The
+<em class="parameter"><code>salted_password</code></em>
+, <em class="parameter"><code>client_key</code></em>
+, <em class="parameter"><code>server_key</code></em>
+, and <em class="parameter"><code>stored_key</code></em>
+ buffers
+must have room to hold digest for given <em class="parameter"><code>hash</code></em>
+, use
+<a class="link" href="gsasl-gsasl.html#GSASL-HASH-MAX-SIZE:CAPS"><span class="type">GSASL_HASH_MAX_SIZE</span></a> which is sufficient for all hashes.</p>
+<div class="refsect3">
+<a name="gsasl-scram-secrets-from-password.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>hash</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gsasl-gsasl.html#Gsasl-hash" title="enum Gsasl_hash"><code class="literal">Gsasl_hash</code></a> element, e.g., <a class="link" href="gsasl-gsasl.html#GSASL-HASH-SHA256:CAPS"><span class="type">GSASL_HASH_SHA256</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>password</p></td>
+<td class="parameter_description"><p>input parameter with password.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iteration_count</p></td>
+<td class="parameter_description"><p>number of PBKDF2 rounds to apply.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>salt</p></td>
+<td class="parameter_description"><p>input character array of <em class="parameter"><code>saltlen</code></em>
+length with salt for PBKDF2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>saltlen</p></td>
+<td class="parameter_description"><p>length of <em class="parameter"><code>salt</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>salted_password</p></td>
+<td class="parameter_description"><p>pre-allocated output array with derived salted password.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client_key</p></td>
+<td class="parameter_description"><p>pre-allocated output array with derived client key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>server_key</p></td>
+<td class="parameter_description"><p>pre-allocated output array with derived server key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stored_key</p></td>
+<td class="parameter_description"><p>pre-allocated output array with derived stored key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-scram-secrets-from-password.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if successful, or error code.</p>
+</div>
+<p class="since">Since: 1.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-simple-getpass"></a><h3>gsasl_simple_getpass ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_simple_getpass (<em class="parameter"><code>const <span class="type">char</span> *filename</code></em>,
+                      <em class="parameter"><code>const <span class="type">char</span> *username</code></em>,
+                      <em class="parameter"><code><span class="type">char</span> **key</code></em>);</pre>
+<p>Retrieve password for user from specified file.  The buffer <em class="parameter"><code>key</code></em>
+
+contain the password if this function is successful.  The caller is
+responsible for deallocating it.</p>
+<p>The file should be on the UoW "MD5 Based Authentication" format,
+which means it is in text format with comments denoted by # first
+on the line, with user entries looking as "usernameTABpassword".
+This function removes CR and LF at the end of lines before
+processing.  TAB, CR, and LF denote ASCII values 9, 13, and 10,
+respectively.</p>
+<div class="refsect3">
+<a name="gsasl-simple-getpass.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>filename of file containing passwords.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>username</p></td>
+<td class="parameter_description"><p>username string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>newly allocated output character array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-simple-getpass.returns"></a><h4>Returns</h4>
+<p> Return <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> if output buffer contains the
+password, <a class="link" href="gsasl-gsasl.html#GSASL-AUTHENTICATION-ERROR:CAPS"><code class="literal">GSASL_AUTHENTICATION_ERROR</code></a> if the user could not be
+found, or other error code.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-base64-to"></a><h3>gsasl_base64_to ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_base64_to (<em class="parameter"><code>const <span class="type">char</span> *in</code></em>,
+                 <em class="parameter"><code><span class="type">size_t</span> inlen</code></em>,
+                 <em class="parameter"><code><span class="type">char</span> **out</code></em>,
+                 <em class="parameter"><code><span class="type">size_t</span> *outlen</code></em>);</pre>
+<p>Encode data as base64.  The <em class="parameter"><code>out</code></em>
+ string is zero terminated, and
+<em class="parameter"><code>outlen</code></em>
+ holds the length excluding the terminating zero.  The <em class="parameter"><code>out</code></em>
+
+buffer must be deallocated by the caller.</p>
+<div class="refsect3">
+<a name="gsasl-base64-to.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>in</p></td>
+<td class="parameter_description"><p>input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>inlen</p></td>
+<td class="parameter_description"><p>size of input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>pointer to newly allocated base64-encoded string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>outlen</p></td>
+<td class="parameter_description"><p>pointer to size of newly allocated base64-encoded string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-base64-to.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> on success, or <a class="link" href="gsasl-gsasl.html#GSASL-MALLOC-ERROR:CAPS"><code class="literal">GSASL_MALLOC_ERROR</code></a>
+if input was too large or memory allocation fail.</p>
+</div>
+<p class="since">Since: 0.2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-base64-from"></a><h3>gsasl_base64_from ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_base64_from (<em class="parameter"><code>const <span class="type">char</span> *in</code></em>,
+                   <em class="parameter"><code><span class="type">size_t</span> inlen</code></em>,
+                   <em class="parameter"><code><span class="type">char</span> **out</code></em>,
+                   <em class="parameter"><code><span class="type">size_t</span> *outlen</code></em>);</pre>
+<p>Decode Base64 data.  The <em class="parameter"><code>out</code></em>
+ buffer must be deallocated by the
+caller.</p>
+<div class="refsect3">
+<a name="gsasl-base64-from.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>in</p></td>
+<td class="parameter_description"><p>input byte array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>inlen</p></td>
+<td class="parameter_description"><p>size of input byte array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>pointer to newly allocated output byte array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>outlen</p></td>
+<td class="parameter_description"><p>pointer to size of newly allocated output byte array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-base64-from.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> on success, <a class="link" href="gsasl-gsasl.html#GSASL-BASE64-ERROR:CAPS"><code class="literal">GSASL_BASE64_ERROR</code></a> if
+input was invalid, and <a class="link" href="gsasl-gsasl.html#GSASL-MALLOC-ERROR:CAPS"><code class="literal">GSASL_MALLOC_ERROR</code></a> on memory allocation
+errors.</p>
+</div>
+<p class="since">Since: 0.2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-hex-to"></a><h3>gsasl_hex_to ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_hex_to (<em class="parameter"><code>const <span class="type">char</span> *in</code></em>,
+              <em class="parameter"><code><span class="type">size_t</span> inlen</code></em>,
+              <em class="parameter"><code><span class="type">char</span> **out</code></em>,
+              <em class="parameter"><code><span class="type">size_t</span> *outlen</code></em>);</pre>
+<p>Hex encode data.  The <em class="parameter"><code>out</code></em>
+ string is zero terminated, and <em class="parameter"><code>outlen</code></em>
+
+holds the length excluding the terminating zero.  The <em class="parameter"><code>out</code></em>
+ buffer
+must be deallocated by the caller.</p>
+<div class="refsect3">
+<a name="gsasl-hex-to.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>in</p></td>
+<td class="parameter_description"><p>input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>inlen</p></td>
+<td class="parameter_description"><p>size of input byte array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>pointer to newly allocated hex-encoded string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>outlen</p></td>
+<td class="parameter_description"><p>pointer to size of newly allocated hex-encoded string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-hex-to.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> on success, or <a class="link" href="gsasl-gsasl.html#GSASL-MALLOC-ERROR:CAPS"><code class="literal">GSASL_MALLOC_ERROR</code></a>
+if input was too large or memory allocation fail.</p>
+</div>
+<p class="since">Since: 1.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-hex-from"></a><h3>gsasl_hex_from ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gsasl_hex_from (<em class="parameter"><code>const <span class="type">char</span> *in</code></em>,
+                <em class="parameter"><code><span class="type">char</span> **out</code></em>,
+                <em class="parameter"><code><span class="type">size_t</span> *outlen</code></em>);</pre>
+<p>Decode hex data.  The <em class="parameter"><code>out</code></em>
+ buffer must be deallocated by the
+caller.</p>
+<div class="refsect3">
+<a name="gsasl-hex-from.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>in</p></td>
+<td class="parameter_description"><p>input byte array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>pointer to newly allocated output byte array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>outlen</p></td>
+<td class="parameter_description"><p>pointer to size of newly allocated output byte array</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gsasl-hex-from.returns"></a><h4>Returns</h4>
+<p> Returns <a class="link" href="gsasl-gsasl.html#GSASL-OK:CAPS"><code class="literal">GSASL_OK</code></a> on success, <a class="link" href="gsasl-gsasl.html#GSASL-BASE64-ERROR:CAPS"><code class="literal">GSASL_BASE64_ERROR</code></a> if
+input was invalid, and <a class="link" href="gsasl-gsasl.html#GSASL-MALLOC-ERROR:CAPS"><code class="literal">GSASL_MALLOC_ERROR</code></a> on memory allocation
+errors.</p>
+</div>
+<p class="since">Since: 1.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gsasl-free"></a><h3>gsasl_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gsasl_free (<em class="parameter"><code><span class="type">void</span> *ptr</code></em>);</pre>
+<p>Invoke free(<em class="parameter"><code>ptr</code></em>
+) to de-allocate memory pointer.  Typically used on
+strings allocated by other libgsasl functions.</p>
+<p>This is useful on Windows where libgsasl is linked to one CRT and
+the application is linked to another CRT.  Then malloc/free will
+not use the same heap.  This happens if you build libgsasl using
+mingw32 and the application with Visual Studio.</p>
+<div class="refsect3">
+<a name="gsasl-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ptr</p></td>
+<td class="parameter_description"><p>memory pointer</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 0.2.19</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gsasl-gsasl.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GSASL-API:CAPS"></a><h3>GSASL_API</h3>
+<pre class="programlisting">#define GSASL_API __attribute__((__visibility__("default")))
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GSASL-VERSION:CAPS"></a><h3>GSASL_VERSION</h3>
+<pre class="programlisting">#define GSASL_VERSION "1.10.0"
+</pre>
+<p>Pre-processor symbol with a string that describe the header file
+version number.  Used together with <a class="link" href="gsasl-gsasl.html#gsasl-check-version" title="gsasl_check_version ()"><code class="function">gsasl_check_version()</code></a> to
+verify header file and run-time library consistency.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GSASL-VERSION-MAJOR:CAPS"></a><h3>GSASL_VERSION_MAJOR</h3>
+<pre class="programlisting">#define GSASL_VERSION_MAJOR 1
+</pre>
+<p>Pre-processor symbol with a decimal value that describe the major
+level of the header file version number.  For example, when the
+header version is 1.2.3 this symbol will be 1.</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GSASL-VERSION-MINOR:CAPS"></a><h3>GSASL_VERSION_MINOR</h3>
+<pre class="programlisting">#define GSASL_VERSION_MINOR 10
+</pre>
+<p>Pre-processor symbol with a decimal value that describe the minor
+level of the header file version number.  For example, when the
+header version is 1.2.3 this symbol will be 2.</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GSASL-VERSION-PATCH:CAPS"></a><h3>GSASL_VERSION_PATCH</h3>
+<pre class="programlisting">#define GSASL_VERSION_PATCH 0
+</pre>
+<p>Pre-processor symbol with a decimal value that describe the patch
+level of the header file version number.  For example, when the
+header version is 1.2.3 this symbol will be 3.</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GSASL-VERSION-NUMBER:CAPS"></a><h3>GSASL_VERSION_NUMBER</h3>
+<pre class="programlisting">#define GSASL_VERSION_NUMBER 0x010a00
+</pre>
+<p>Pre-processor symbol with a hexadecimal value describing the
+header file version number.  For example, when the header version
+is 1.2.3 this symbol will have the value 0x010203.</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-rc"></a><h3>enum Gsasl_rc</h3>
+<p>Error codes for library functions.</p>
+<div class="refsect3">
+<a name="Gsasl-rc.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-OK:CAPS"></a>GSASL_OK</p></td>
+<td class="enum_member_description">
+<p>Successful return code, guaranteed to be always 0.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NEEDS-MORE:CAPS"></a>GSASL_NEEDS_MORE</p></td>
+<td class="enum_member_description">
+<p>Mechanism expects another round-trip.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-UNKNOWN-MECHANISM:CAPS"></a>GSASL_UNKNOWN_MECHANISM</p></td>
+<td class="enum_member_description">
+<p>Application requested an unknown mechanism.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-MECHANISM-CALLED-TOO-MANY-TIMES:CAPS"></a>GSASL_MECHANISM_CALLED_TOO_MANY_TIMES</p></td>
+<td class="enum_member_description">
+<p>Application requested too
+  many round trips from mechanism.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-MALLOC-ERROR:CAPS"></a>GSASL_MALLOC_ERROR</p></td>
+<td class="enum_member_description">
+<p>Memory allocation failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-BASE64-ERROR:CAPS"></a>GSASL_BASE64_ERROR</p></td>
+<td class="enum_member_description">
+<p>Base64 encoding/decoding failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CRYPTO-ERROR:CAPS"></a>GSASL_CRYPTO_ERROR</p></td>
+<td class="enum_member_description">
+<p>Cryptographic error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SASLPREP-ERROR:CAPS"></a>GSASL_SASLPREP_ERROR</p></td>
+<td class="enum_member_description">
+<p>Failed to prepare internationalized string.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-MECHANISM-PARSE-ERROR:CAPS"></a>GSASL_MECHANISM_PARSE_ERROR</p></td>
+<td class="enum_member_description">
+<p>Mechanism could not parse input.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-AUTHENTICATION-ERROR:CAPS"></a>GSASL_AUTHENTICATION_ERROR</p></td>
+<td class="enum_member_description">
+<p>Authentication has failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-INTEGRITY-ERROR:CAPS"></a>GSASL_INTEGRITY_ERROR</p></td>
+<td class="enum_member_description">
+<p>Application data integrity check failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-CLIENT-CODE:CAPS"></a>GSASL_NO_CLIENT_CODE</p></td>
+<td class="enum_member_description">
+<p>Library was built with client functionality.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-SERVER-CODE:CAPS"></a>GSASL_NO_SERVER_CODE</p></td>
+<td class="enum_member_description">
+<p>Library was built with server functionality.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-CALLBACK:CAPS"></a>GSASL_NO_CALLBACK</p></td>
+<td class="enum_member_description">
+<p>Application did not provide a callback.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-ANONYMOUS-TOKEN:CAPS"></a>GSASL_NO_ANONYMOUS_TOKEN</p></td>
+<td class="enum_member_description">
+<p>Could not get required anonymous token.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-AUTHID:CAPS"></a>GSASL_NO_AUTHID</p></td>
+<td class="enum_member_description">
+<p>Could not get required authentication
+  identity (username).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-AUTHZID:CAPS"></a>GSASL_NO_AUTHZID</p></td>
+<td class="enum_member_description">
+<p>Could not get required authorization identity.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-PASSWORD:CAPS"></a>GSASL_NO_PASSWORD</p></td>
+<td class="enum_member_description">
+<p>Could not get required password.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-PASSCODE:CAPS"></a>GSASL_NO_PASSCODE</p></td>
+<td class="enum_member_description">
+<p>Could not get required SecurID PIN.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-PIN:CAPS"></a>GSASL_NO_PIN</p></td>
+<td class="enum_member_description">
+<p>Could not get required SecurID PIN.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-SERVICE:CAPS"></a>GSASL_NO_SERVICE</p></td>
+<td class="enum_member_description">
+<p>Could not get required service name.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-HOSTNAME:CAPS"></a>GSASL_NO_HOSTNAME</p></td>
+<td class="enum_member_description">
+<p>Could not get required hostname.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-CB-TLS-UNIQUE:CAPS"></a>GSASL_NO_CB_TLS_UNIQUE</p></td>
+<td class="enum_member_description">
+<p>Could not get required tls-unique CB.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-SAML20-IDP-IDENTIFIER:CAPS"></a>GSASL_NO_SAML20_IDP_IDENTIFIER</p></td>
+<td class="enum_member_description">
+<p>Could not get required SAML IdP.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-SAML20-REDIRECT-URL:CAPS"></a>GSASL_NO_SAML20_REDIRECT_URL</p></td>
+<td class="enum_member_description">
+<p>Could not get required SAML
+  redirect URL.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-NO-OPENID20-REDIRECT-URL:CAPS"></a>GSASL_NO_OPENID20_REDIRECT_URL</p></td>
+<td class="enum_member_description">
+<p>Could not get required OpenID
+  redirect URL.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-RELEASE-BUFFER-ERROR:CAPS"></a>GSASL_GSSAPI_RELEASE_BUFFER_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-IMPORT-NAME-ERROR:CAPS"></a>GSASL_GSSAPI_IMPORT_NAME_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-INIT-SEC-CONTEXT-ERROR:CAPS"></a>GSASL_GSSAPI_INIT_SEC_CONTEXT_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-ACCEPT-SEC-CONTEXT-ERROR:CAPS"></a>GSASL_GSSAPI_ACCEPT_SEC_CONTEXT_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-UNWRAP-ERROR:CAPS"></a>GSASL_GSSAPI_UNWRAP_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-WRAP-ERROR:CAPS"></a>GSASL_GSSAPI_WRAP_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-ACQUIRE-CRED-ERROR:CAPS"></a>GSASL_GSSAPI_ACQUIRE_CRED_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-DISPLAY-NAME-ERROR:CAPS"></a>GSASL_GSSAPI_DISPLAY_NAME_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-UNSUPPORTED-PROTECTION-ERROR:CAPS"></a>GSASL_GSSAPI_UNSUPPORTED_PROTECTION_ERROR</p></td>
+<td class="enum_member_description">
+<p>An unsupported
+  quality-of-protection layer was requeted.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-KERBEROS-V5-INIT-ERROR:CAPS"></a>GSASL_KERBEROS_V5_INIT_ERROR</p></td>
+<td class="enum_member_description">
+<p>Init error in KERBEROS_V5.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-KERBEROS-V5-INTERNAL-ERROR:CAPS"></a>GSASL_KERBEROS_V5_INTERNAL_ERROR</p></td>
+<td class="enum_member_description">
+<p>General error in KERBEROS_V5.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SHISHI-ERROR:CAPS"></a>GSASL_SHISHI_ERROR</p></td>
+<td class="enum_member_description">
+<p>Same as <a class="link" href="gsasl-gsasl.html#GSASL-KERBEROS-V5-INTERNAL-ERROR:CAPS"><code class="literal">GSASL_KERBEROS_V5_INTERNAL_ERROR</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SECURID-SERVER-NEED-ADDITIONAL-PASSCODE:CAPS"></a>GSASL_SECURID_SERVER_NEED_ADDITIONAL_PASSCODE</p></td>
+<td class="enum_member_description">
+<p>SecurID mechanism
+  needs an additional passcode.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SECURID-SERVER-NEED-NEW-PIN:CAPS"></a>GSASL_SECURID_SERVER_NEED_NEW_PIN</p></td>
+<td class="enum_member_description">
+<p>SecurID mechanism
+  needs an new PIN.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-ENCAPSULATE-TOKEN-ERROR:CAPS"></a>GSASL_GSSAPI_ENCAPSULATE_TOKEN_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-DECAPSULATE-TOKEN-ERROR:CAPS"></a>GSASL_GSSAPI_DECAPSULATE_TOKEN_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-INQUIRE-MECH-FOR-SASLNAME-ERROR:CAPS"></a>GSASL_GSSAPI_INQUIRE_MECH_FOR_SASLNAME_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-TEST-OID-SET-MEMBER-ERROR:CAPS"></a>GSASL_GSSAPI_TEST_OID_SET_MEMBER_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-RELEASE-OID-SET-ERROR:CAPS"></a>GSASL_GSSAPI_RELEASE_OID_SET_ERROR</p></td>
+<td class="enum_member_description">
+<p>GSS-API library call error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-qop"></a><h3>enum Gsasl_qop</h3>
+<p>Quality of Protection types (DIGEST-MD5 and GSSAPI).  The
+integrity and confidentiality values is about application data
+wrapping.  We recommend that you use <em class="parameter"><code>GSASL_QOP_AUTH</code></em>
+ with TLS as
+that combination is generally more secure and have better chance
+of working than the integrity/confidentiality layers of SASL.</p>
+<div class="refsect3">
+<a name="Gsasl-qop.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-QOP-AUTH:CAPS"></a>GSASL_QOP_AUTH</p></td>
+<td class="enum_member_description">
+<p>Authentication only.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-QOP-AUTH-INT:CAPS"></a>GSASL_QOP_AUTH_INT</p></td>
+<td class="enum_member_description">
+<p>Authentication and integrity.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-QOP-AUTH-CONF:CAPS"></a>GSASL_QOP_AUTH_CONF</p></td>
+<td class="enum_member_description">
+<p>Authentication, integrity and confidentiality.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-cipher"></a><h3>enum Gsasl_cipher</h3>
+<p>Encryption types (DIGEST-MD5) for confidentiality services of
+application data.  We recommend that you use TLS instead as it is
+generally more secure and have better chance of working.</p>
+<div class="refsect3">
+<a name="Gsasl-cipher.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CIPHER-DES:CAPS"></a>GSASL_CIPHER_DES</p></td>
+<td class="enum_member_description">
+<p>Cipher DES.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CIPHER-3DES:CAPS"></a>GSASL_CIPHER_3DES</p></td>
+<td class="enum_member_description">
+<p>Cipher 3DES.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CIPHER-RC4:CAPS"></a>GSASL_CIPHER_RC4</p></td>
+<td class="enum_member_description">
+<p>Cipher RC4.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CIPHER-RC4-40:CAPS"></a>GSASL_CIPHER_RC4_40</p></td>
+<td class="enum_member_description">
+<p>Cipher RC4 with 40-bit keys.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CIPHER-RC4-56:CAPS"></a>GSASL_CIPHER_RC4_56</p></td>
+<td class="enum_member_description">
+<p>Cipher RC4 with 56-bit keys.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CIPHER-AES:CAPS"></a>GSASL_CIPHER_AES</p></td>
+<td class="enum_member_description">
+<p>Cipher AES.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-saslprep-flags"></a><h3>enum Gsasl_saslprep_flags</h3>
+<p>Flags for the SASLprep function, see <a class="link" href="gsasl-gsasl.html#gsasl-saslprep" title="gsasl_saslprep ()"><code class="function">gsasl_saslprep()</code></a>.  For
+background, see the GNU Libidn documentation.</p>
+<div class="refsect3">
+<a name="Gsasl-saslprep-flags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="enum_member_name"><p><a name="GSASL-ALLOW-UNASSIGNED:CAPS"></a>GSASL_ALLOW_UNASSIGNED</p></td>
+<td class="enum_member_description">
+<p>Allow unassigned code points.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl"></a><h3>Gsasl</h3>
+<pre class="programlisting">  typedef struct Gsasl Gsasl;
+</pre>
+<p>Handle to global library context.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-session"></a><h3>Gsasl_session</h3>
+<pre class="programlisting">  typedef struct Gsasl_session Gsasl_session;
+</pre>
+<p>Handle to SASL session context.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-property"></a><h3>enum Gsasl_property</h3>
+<p>Callback/property types.</p>
+<div class="refsect3">
+<a name="Gsasl-property.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-AUTHID:CAPS"></a>GSASL_AUTHID</p></td>
+<td class="enum_member_description">
+<p>Authentication identity (username).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-AUTHZID:CAPS"></a>GSASL_AUTHZID</p></td>
+<td class="enum_member_description">
+<p>Authorization identity.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-PASSWORD:CAPS"></a>GSASL_PASSWORD</p></td>
+<td class="enum_member_description">
+<p>Password.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-ANONYMOUS-TOKEN:CAPS"></a>GSASL_ANONYMOUS_TOKEN</p></td>
+<td class="enum_member_description">
+<p>Anonymous identifier.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SERVICE:CAPS"></a>GSASL_SERVICE</p></td>
+<td class="enum_member_description">
+<p>Service name</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-HOSTNAME:CAPS"></a>GSASL_HOSTNAME</p></td>
+<td class="enum_member_description">
+<p>Host name.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-GSSAPI-DISPLAY-NAME:CAPS"></a>GSASL_GSSAPI_DISPLAY_NAME</p></td>
+<td class="enum_member_description">
+<p>GSS-API credential principal name.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-PASSCODE:CAPS"></a>GSASL_PASSCODE</p></td>
+<td class="enum_member_description">
+<p>SecurID passcode.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SUGGESTED-PIN:CAPS"></a>GSASL_SUGGESTED_PIN</p></td>
+<td class="enum_member_description">
+<p>SecurID suggested PIN.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-PIN:CAPS"></a>GSASL_PIN</p></td>
+<td class="enum_member_description">
+<p>SecurID PIN.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-REALM:CAPS"></a>GSASL_REALM</p></td>
+<td class="enum_member_description">
+<p>User realm.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-DIGEST-MD5-HASHED-PASSWORD:CAPS"></a>GSASL_DIGEST_MD5_HASHED_PASSWORD</p></td>
+<td class="enum_member_description">
+<p>Pre-computed hashed DIGEST-MD5
+  password, to avoid storing passwords in the clear.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-QOPS:CAPS"></a>GSASL_QOPS</p></td>
+<td class="enum_member_description">
+<p>Set of quality-of-protection values.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-QOP:CAPS"></a>GSASL_QOP</p></td>
+<td class="enum_member_description">
+<p>Quality-of-protection value.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SCRAM-ITER:CAPS"></a>GSASL_SCRAM_ITER</p></td>
+<td class="enum_member_description">
+<p>Number of iterations in password-to-key hashing.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SCRAM-SALT:CAPS"></a>GSASL_SCRAM_SALT</p></td>
+<td class="enum_member_description">
+<p>Salt for password-to-key hashing.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SCRAM-SALTED-PASSWORD:CAPS"></a>GSASL_SCRAM_SALTED_PASSWORD</p></td>
+<td class="enum_member_description">
+<p>Hex-encoded hashed/salted password.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SCRAM-SERVERKEY:CAPS"></a>GSASL_SCRAM_SERVERKEY</p></td>
+<td class="enum_member_description">
+<p>Hex-encoded SCRAM ServerKey derived
+  from users' passowrd.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SCRAM-STOREDKEY:CAPS"></a>GSASL_SCRAM_STOREDKEY</p></td>
+<td class="enum_member_description">
+<p>Hex-encoded SCRAM StoredKey derived
+  from users' passowrd.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-CB-TLS-UNIQUE:CAPS"></a>GSASL_CB_TLS_UNIQUE</p></td>
+<td class="enum_member_description">
+<p>Base64 encoded tls-unique channel binding.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SAML20-IDP-IDENTIFIER:CAPS"></a>GSASL_SAML20_IDP_IDENTIFIER</p></td>
+<td class="enum_member_description">
+<p>SAML20 user IdP URL.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SAML20-REDIRECT-URL:CAPS"></a>GSASL_SAML20_REDIRECT_URL</p></td>
+<td class="enum_member_description">
+<p>SAML 2.0 URL to access in browser.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-OPENID20-REDIRECT-URL:CAPS"></a>GSASL_OPENID20_REDIRECT_URL</p></td>
+<td class="enum_member_description">
+<p>OpenID 2.0 URL to access in browser.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-OPENID20-OUTCOME-DATA:CAPS"></a>GSASL_OPENID20_OUTCOME_DATA</p></td>
+<td class="enum_member_description">
+<p>OpenID 2.0 authentication outcome data.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-SAML20-AUTHENTICATE-IN-BROWSER:CAPS"></a>GSASL_SAML20_AUTHENTICATE_IN_BROWSER</p></td>
+<td class="enum_member_description">
+<p>Request to perform SAML 2.0
+  authentication in browser.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-OPENID20-AUTHENTICATE-IN-BROWSER:CAPS"></a>GSASL_OPENID20_AUTHENTICATE_IN_BROWSER</p></td>
+<td class="enum_member_description">
+<p>Request to perform OpenID 2.0
+  authentication in browser.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-VALIDATE-SIMPLE:CAPS"></a>GSASL_VALIDATE_SIMPLE</p></td>
+<td class="enum_member_description">
+<p>Request for simple validation.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-VALIDATE-EXTERNAL:CAPS"></a>GSASL_VALIDATE_EXTERNAL</p></td>
+<td class="enum_member_description">
+<p>Request for validation of EXTERNAL.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-VALIDATE-ANONYMOUS:CAPS"></a>GSASL_VALIDATE_ANONYMOUS</p></td>
+<td class="enum_member_description">
+<p>Request for validation of ANONYMOUS.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-VALIDATE-GSSAPI:CAPS"></a>GSASL_VALIDATE_GSSAPI</p></td>
+<td class="enum_member_description">
+<p>Request for validation of GSSAPI/GS2.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-VALIDATE-SECURID:CAPS"></a>GSASL_VALIDATE_SECURID</p></td>
+<td class="enum_member_description">
+<p>Reqest for validation of SecurID.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-VALIDATE-SAML20:CAPS"></a>GSASL_VALIDATE_SAML20</p></td>
+<td class="enum_member_description">
+<p>Reqest for validation of SAML20.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-VALIDATE-OPENID20:CAPS"></a>GSASL_VALIDATE_OPENID20</p></td>
+<td class="enum_member_description">
+<p>Reqest for validation of OpenID 2.0 login.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-hash"></a><h3>enum Gsasl_hash</h3>
+<div class="refsect3">
+<a name="Gsasl-hash.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-HASH-SHA1:CAPS"></a>GSASL_HASH_SHA1</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-HASH-SHA256:CAPS"></a>GSASL_HASH_SHA256</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gsasl-hash-length"></a><h3>enum Gsasl_hash_length</h3>
+<div class="refsect3">
+<a name="Gsasl-hash-length.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-HASH-SHA1-SIZE:CAPS"></a>GSASL_HASH_SHA1_SIZE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-HASH-SHA256-SIZE:CAPS"></a>GSASL_HASH_SHA256_SIZE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSASL-HASH-MAX-SIZE:CAPS"></a>GSASL_HASH_MAX_SIZE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

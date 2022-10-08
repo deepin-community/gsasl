@@ -1,0 +1,326 @@
+# Brazilian Portuguese translations for gsasl package
+# Traduções em português brasileiro para o pacote gsasl.
+# Copyright (C) 2020 Free Software Foundation, Inc.
+# Copyright (C) 2020 Simon Josefsson
+# This file is distributed under the same license as the gsasl package.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2018-2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gsasl 1.9.2\n"
+"Report-Msgid-Bugs-To: bug-gsasl@gnu.org\n"
+"POT-Creation-Date: 2021-01-01 17:35+0100\n"
+"PO-Revision-Date: 2020-12-26 07:49-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
+"net>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.38.0\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+#: src/imap.c:76 src/smtp.c:79 src/gsasl.c:255
+#, fuzzy, c-format
+msgid "Input list of SASL mechanisms:\n"
+msgstr "Lista de entrada dos mecanismos SASL aceitos pelo servidor:\n"
+
+#: src/imap.c:106 src/smtp.c:113 src/gsasl.c:283
+#, c-format
+msgid "Using mechanism:\n"
+msgstr "Usando o mecanismo:\n"
+
+#: src/imap.c:186
+#, c-format
+msgid "warning: server did not return a token\n"
+msgstr "aviso: o servidor não retornou um token\n"
+
+#: src/smtp.c:192
+#, c-format
+msgid ""
+"error: could not parse server data:\n"
+"%s\n"
+msgstr ""
+"erro: não foi possível analisar dados do servidor:\n"
+"%s\n"
+
+#: src/gsasl.c:264
+#, c-format
+msgid "Input list of SASL mechanisms supported by server:\n"
+msgstr "Lista de entrada dos mecanismos SASL aceitos pelo servidor:\n"
+
+#: src/gsasl.c:300
+#, c-format
+msgid "Output from server:\n"
+msgstr "Saída do servidor:\n"
+
+#: src/gsasl.c:302
+#, c-format
+msgid "Output from client:\n"
+msgstr "Saída de cliente:\n"
+
+#: src/gsasl.c:349
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Tente \"%s --help\" para obter mais informações.\n"
+
+#: src/gsasl.c:381
+#, c-format
+msgid "required --mechanism missing"
+msgstr "faltando --mechanism obrigatório"
+
+#: src/gsasl.c:394
+#, c-format
+msgid "unsupported --mechanism for --mkpasswd: %s"
+msgstr "--mechanism sem suporte para --mkpasswd: %s"
+
+#: src/gsasl.c:398
+#, c-format
+msgid "iteration count must be positive: %d"
+msgstr "contagem de iterações deve ter valor positivo: %d"
+
+#: src/gsasl.c:424
+msgid "Enter password: "
+msgstr "Insira a senha: "
+
+#: src/gsasl.c:509
+#, c-format
+msgid "missing argument"
+msgstr "faltando argumento"
+
+#: src/gsasl.c:516
+#, c-format
+msgid "need both --x509-cert-file and --x509-key-file"
+msgstr "é necessário --x509-cert-file e --x509-key-file"
+
+#: src/gsasl.c:520
+#, c-format
+msgid "cannot use both --starttls and --no-starttls"
+msgstr "não é possível usar --starttls com --no-starttls"
+
+#: src/gsasl.c:523
+#, c-format
+msgid "cannot use both --smtp and --imap"
+msgstr "não é possível usar --smtp com --imap"
+
+#: src/gsasl.c:576
+#, c-format
+msgid "cannot guess SASL profile (try --smtp or --imap)"
+msgstr "não foi possível adivinhar o perfil SASL (tente --smtp ou --imap)"
+
+#: src/gsasl.c:596
+#, c-format
+msgid "initialization failure: %s"
+msgstr "falha ao inicializar: %s"
+
+#: src/gsasl.c:611
+#, c-format
+msgid "error listing mechanisms: %s"
+msgstr "erro ao listar os mecanismos: %s"
+
+#: src/gsasl.c:618
+#, c-format
+msgid "This client supports the following mechanisms:\n"
+msgstr "Esse cliente oferece suporte aos seguintes mecanismos:\n"
+
+#: src/gsasl.c:621
+#, c-format
+msgid "This server supports the following mechanisms:\n"
+msgstr "Esse servidor oferece suporte aos seguintes mecanismos:\n"
+
+#: src/gsasl.c:689
+#, c-format
+msgid "GnuTLS global initialization failed: %s"
+msgstr "a inicialização global de GnuTLS falhou: %s"
+
+#: src/gsasl.c:694
+#, c-format
+msgid "GnuTLS initialization failed: %s"
+msgstr "a inicialização de GnuTLS falhou: %s"
+
+#: src/gsasl.c:699
+#, c-format
+msgid "setting GnuTLS defaults failed: %s"
+msgstr "a configuração de padrões do GnuTLS falhou: %s"
+
+#: src/gsasl.c:706
+#, c-format
+msgid "setting GnuTLS server name failed: %s"
+msgstr "a configuração do nome do servidor do GnuTLS falhou: %s"
+
+#: src/gsasl.c:712
+#, c-format
+msgid "allocating anonymous GnuTLS credential: %s"
+msgstr "alocando credencial anônima de GnuTLS: %s"
+
+#: src/gsasl.c:717
+#, c-format
+msgid "setting anonymous GnuTLS credential: %s"
+msgstr "configurando credencial anônima de GnuTLS: %s"
+
+#: src/gsasl.c:722
+#, c-format
+msgid "allocating X.509 GnuTLS credential: %s"
+msgstr "alocando credencial X.509 de GnuTLS: %s"
+
+#: src/gsasl.c:730
+#, c-format
+msgid "loading X.509 GnuTLS credential: %s"
+msgstr "carregando credencial X.509 de GnuTLS: %s"
+
+#: src/gsasl.c:738
+#, c-format
+msgid "no X.509 CAs found: %s"
+msgstr "nenhuma AC X.509 localizada: %s"
+
+#: src/gsasl.c:741
+#, c-format
+msgid "no X.509 CAs found"
+msgstr "nenhuma AC X.509 localizada"
+
+#: src/gsasl.c:747
+#, c-format
+msgid "setting GnuTLS system trust: %s"
+msgstr "configurando confiança do sistema de GnuTLS: %s"
+
+#: src/gsasl.c:754
+#, c-format
+msgid "setting X.509 GnuTLS credential: %s"
+msgstr "configurando credencial X.509 de GnuTLS: %s"
+
+#: src/gsasl.c:768
+#, c-format
+msgid "setting GnuTLS cipher priority (%s): %s\n"
+msgstr "configurando prioridade de cifra de GnuTLS (%s): %s\n"
+
+#: src/gsasl.c:794
+#, c-format
+msgid "TLS X.509 Verification: %s\n"
+msgstr "verificação TLS X.509: %s\n"
+
+#: src/gsasl.c:799
+#, c-format
+msgid "GnuTLS handshake failed: %s"
+msgstr "negociação de GnuTLS falhou: %s"
+
+#: src/gsasl.c:810
+#, c-format
+msgid "TLS session info: %s\n"
+msgstr "informações da sessão TLS: %s\n"
+
+#: src/gsasl.c:831
+#, c-format
+msgid "TLS X.509 Certificate %u: %s\n"
+msgstr "certificado TLS X.509 %u: %s\n"
+
+#: src/gsasl.c:846
+#, c-format
+msgid "verifying peer certificate: %s"
+msgstr "verificando o certificado do par: %s"
+
+#: src/gsasl.c:850
+#, c-format
+msgid "server certificate is not trusted"
+msgstr "o certificado do servidor não é confiável"
+
+#: src/gsasl.c:854
+#, c-format
+msgid "server certificate hasn't got a known issuer"
+msgstr "o certificado do servidor não tem um emissor conhecido"
+
+#: src/gsasl.c:857
+#, c-format
+msgid "server certificate has been revoked"
+msgstr "o certificado do servidor foi revogado"
+
+#: src/gsasl.c:861
+#, c-format
+msgid "could not verify server certificate (rc=%u)"
+msgstr "não foi possível verificar o certificado do servidor (rc=%u)"
+
+#: src/gsasl.c:872
+#, c-format
+msgid "getting channel binding failed: %s"
+msgstr "a obtenção de associação de canal falhou: %s"
+
+#: src/gsasl.c:902
+#, c-format
+msgid "Cannot find mechanism...\n"
+msgstr "Não foi possível localizar o mecanismo...\n"
+
+#: src/gsasl.c:919
+#, c-format
+msgid "mechanism unavailable: %s"
+msgstr "mecanismo não disponível: %s"
+
+#: src/gsasl.c:947
+#, c-format
+msgid "Enter base64 authentication data from client (press RET if none):\n"
+msgstr ""
+"Insira dados de autenticação base64 do cliente (pressione Enter para "
+"nenhum):\n"
+
+#: src/gsasl.c:950
+#, c-format
+msgid "Enter base64 authentication data from server (press RET if none):\n"
+msgstr ""
+"Insira dados de autenticação base64 do servidor (pressione Enter para "
+"nenhum):\n"
+
+#: src/gsasl.c:960
+#, c-format
+msgid "server error"
+msgstr "erro no servidor"
+
+#: src/gsasl.c:968
+#, c-format
+msgid "mechanism error: %s"
+msgstr "erro de mecanismo: %s"
+
+#: src/gsasl.c:974
+#, c-format
+msgid "Server authentication finished (client trusted)...\n"
+msgstr "Autenticação do servidor finalizada (cliente confiável)...\n"
+
+#: src/gsasl.c:977
+#, c-format
+msgid "Client authentication finished (server trusted)...\n"
+msgstr "Autenticação do cliente finalizada (servidor confiável)...\n"
+
+#: src/gsasl.c:1002
+#, c-format
+msgid "Enter application data (EOF to finish):\n"
+msgstr "Insira dados de aplicativo (EOF para finalizar):\n"
+
+#: src/gsasl.c:1068
+#, c-format
+msgid "Base64 encoded application data to send:\n"
+msgstr "Dados de aplicativo codificados em Base64 para enviar:\n"
+
+#: src/gsasl.c:1107
+#, c-format
+msgid "SASL record too large: %zu\n"
+msgstr "registro SASL grande demais: %zu\n"
+
+#: src/gsasl.c:1131
+#, c-format
+msgid "encoding error: %s"
+msgstr "erro de codificação: %s"
+
+#: src/gsasl.c:1136
+#, c-format
+msgid "Session finished...\n"
+msgstr "Sessão finalizada...\n"
+
+#: src/gsasl.c:1152
+#, c-format
+msgid "terminating GnuTLS session failed: %s"
+msgstr "término de sessão GnuTLS falhou: %s"
+
+#~ msgid "Chose SASL mechanisms:\n"
+#~ msgstr "Escolha os mecanismos SASL:\n"
+
+#~ msgid "Choose SASL mechanism:\n"
+#~ msgstr "Escolha o mecanismo SASL:\n"

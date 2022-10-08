@@ -1,0 +1,93 @@
+@subheading gsasl_nonce
+@anchor{gsasl_nonce}
+@deftypefun {int} {gsasl_nonce} (char * @var{data}, size_t @var{datalen})
+@var{data}: output array to be filled with unpredictable random data.
+
+@var{datalen}: size of output array.
+
+Store unpredictable data of given size in the provided buffer.
+
+Return value: Returns @code{GSASL_OK}  iff successful.
+@end deftypefun
+
+@subheading gsasl_random
+@anchor{gsasl_random}
+@deftypefun {int} {gsasl_random} (char * @var{data}, size_t @var{datalen})
+@var{data}: output array to be filled with strong random data.
+
+@var{datalen}: size of output array.
+
+Store cryptographically strong random data of given size in the
+provided buffer.
+
+Return value: Returns @code{GSASL_OK}  iff successful.
+@end deftypefun
+
+@subheading gsasl_hash_length
+@anchor{gsasl_hash_length}
+@deftypefun {size_t} {gsasl_hash_length} (Gsasl_hash @var{hash})
+@var{hash}: a @code{Gsasl_hash}  element, e.g., @code{GSASL_HASH_SHA256} .
+
+Return the digest output size for hash function  @code{hash} .  For
+example, gsasl_hash_length(GSASL_HASH_SHA256) returns
+GSASL_HASH_SHA256_SIZE which is 32.
+
+@strong{Returns:} size of supplied @code{Gsasl_hash}  element.
+
+@strong{Since:} 1.10
+@end deftypefun
+
+@subheading gsasl_scram_secrets_from_salted_password
+@anchor{gsasl_scram_secrets_from_salted_password}
+@deftypefun {int} {gsasl_scram_secrets_from_salted_password} (Gsasl_hash @var{hash}, const char * @var{salted_password}, char * @var{client_key}, char * @var{server_key}, char * @var{stored_key})
+@var{hash}: a @code{Gsasl_hash}  element, e.g., @code{GSASL_HASH_SHA256} .
+
+@var{salted_password}: input array with salted password.
+
+@var{client_key}: pre-allocated output array with derived client key.
+
+@var{server_key}: pre-allocated output array with derived server key.
+
+@var{stored_key}: pre-allocated output array with derived stored key.
+
+Helper function to derive SCRAM ClientKey/ServerKey/StoredKey.  The
+ @code{client_key} ,  @code{server_key} , and  @code{stored_key} buffers must have room to
+hold digest for given  @code{hash} , use @code{GSASL_HASH_MAX_SIZE}  which is
+sufficient for all hashes.
+
+Return value: Returns @code{GSASL_OK}  if successful, or error code.
+
+@strong{Since:} 1.10
+@end deftypefun
+
+@subheading gsasl_scram_secrets_from_password
+@anchor{gsasl_scram_secrets_from_password}
+@deftypefun {int} {gsasl_scram_secrets_from_password} (Gsasl_hash @var{hash}, const char * @var{password}, unsigned int @var{iteration_count}, const char * @var{salt}, size_t @var{saltlen}, char * @var{salted_password}, char * @var{client_key}, char * @var{server_key}, char * @var{stored_key})
+@var{hash}: a @code{Gsasl_hash}  element, e.g., @code{GSASL_HASH_SHA256} .
+
+@var{password}: input parameter with password.
+
+@var{iteration_count}: number of PBKDF2 rounds to apply.
+
+@var{salt}: input character array of  @code{saltlen} length with salt for PBKDF2.
+
+@var{saltlen}: length of  @code{salt} .
+
+@var{salted_password}: pre-allocated output array with derived salted password.
+
+@var{client_key}: pre-allocated output array with derived client key.
+
+@var{server_key}: pre-allocated output array with derived server key.
+
+@var{stored_key}: pre-allocated output array with derived stored key.
+
+Helper function to generate SCRAM secrets from a password.  The
+ @code{salted_password} ,  @code{client_key} ,  @code{server_key} , and  @code{stored_key} buffers
+must have room to hold digest for given  @code{hash} , use
+@code{GSASL_HASH_MAX_SIZE}  which is sufficient for all hashes.
+
+Return value: Returns @code{GSASL_OK}  if successful, or error code.
+
+@strong{Since:} 1.10
+@end deftypefun
+

@@ -1,0 +1,14 @@
+@subheading gsasl_hash_length
+@anchor{gsasl_hash_length}
+@deftypefun {size_t} {gsasl_hash_length} (Gsasl_hash @var{hash})
+@var{hash}: a @code{Gsasl_hash}  element, e.g., @code{GSASL_HASH_SHA256} .
+
+Return the digest output size for hash function  @code{hash} .  For
+example, gsasl_hash_length(GSASL_HASH_SHA256) returns
+GSASL_HASH_SHA256_SIZE which is 32.
+
+@strong{Returns:} size of supplied @code{Gsasl_hash}  element.
+
+@strong{Since:} 1.10
+@end deftypefun
+

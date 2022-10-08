@@ -1,0 +1,323 @@
+# Hungarian translation for gsasl.
+# Copyright (C) 2014, 2019 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gsasl package.
+#
+# Balázs Úr <ur.balazs@fsf.hu>, 2014, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: gsasl 1.8.1\n"
+"Report-Msgid-Bugs-To: bug-gsasl@gnu.org\n"
+"POT-Creation-Date: 2021-01-01 17:35+0100\n"
+"PO-Revision-Date: 2019-11-23 21:47+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs@fsf.hu>\n"
+"Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.04.3\n"
+
+#: src/imap.c:76 src/smtp.c:79 src/gsasl.c:255
+#, fuzzy, c-format
+msgid "Input list of SASL mechanisms:\n"
+msgstr "A kiszolgáló által támogatott SASL mechanizmusok bemeneti listája:\n"
+
+#: src/imap.c:106 src/smtp.c:113 src/gsasl.c:283
+#, c-format
+msgid "Using mechanism:\n"
+msgstr "Mechanizmus használata:\n"
+
+#: src/imap.c:186
+#, c-format
+msgid "warning: server did not return a token\n"
+msgstr "figyelmeztetés: a kiszolgáló nem adott vissza tokent\n"
+
+#: src/smtp.c:192
+#, c-format
+msgid ""
+"error: could not parse server data:\n"
+"%s\n"
+msgstr ""
+"hiba: nem sikerült feldolgozni a kiszolgáló adatait:\n"
+"%s\n"
+
+#: src/gsasl.c:264
+#, c-format
+msgid "Input list of SASL mechanisms supported by server:\n"
+msgstr "A kiszolgáló által támogatott SASL mechanizmusok bemeneti listája:\n"
+
+#: src/gsasl.c:300
+#, c-format
+msgid "Output from server:\n"
+msgstr "Kimenet a kiszolgálóról:\n"
+
+#: src/gsasl.c:302
+#, c-format
+msgid "Output from client:\n"
+msgstr "Kimenet a kliensről:\n"
+
+#: src/gsasl.c:349
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "További információkért próbálja a(z) „%s --help” parancsot.\n"
+
+#: src/gsasl.c:381
+#, c-format
+msgid "required --mechanism missing"
+msgstr ""
+
+#: src/gsasl.c:394
+#, c-format
+msgid "unsupported --mechanism for --mkpasswd: %s"
+msgstr ""
+
+#: src/gsasl.c:398
+#, c-format
+msgid "iteration count must be positive: %d"
+msgstr ""
+
+#: src/gsasl.c:424
+msgid "Enter password: "
+msgstr ""
+
+#: src/gsasl.c:509
+#, c-format
+msgid "missing argument"
+msgstr "hiányzó argumentum"
+
+#: src/gsasl.c:516
+#, c-format
+msgid "need both --x509-cert-file and --x509-key-file"
+msgstr "a --x509-cert-file és a --x509-key-file is szükséges"
+
+#: src/gsasl.c:520
+#, c-format
+msgid "cannot use both --starttls and --no-starttls"
+msgstr "nem használható együtt a --starttls és a --no-starttls"
+
+#: src/gsasl.c:523
+#, c-format
+msgid "cannot use both --smtp and --imap"
+msgstr "nem használható együtt a --smtp és a --imap"
+
+#: src/gsasl.c:576
+#, fuzzy, c-format
+msgid "cannot guess SASL profile (try --smtp or --imap)"
+msgstr "nem használható együtt a --smtp és a --imap"
+
+#: src/gsasl.c:596
+#, c-format
+msgid "initialization failure: %s"
+msgstr "előkészítési hiba: %s"
+
+#: src/gsasl.c:611
+#, c-format
+msgid "error listing mechanisms: %s"
+msgstr "hiba a mechanizmusok listázásakor: %s"
+
+#: src/gsasl.c:618
+#, c-format
+msgid "This client supports the following mechanisms:\n"
+msgstr "Ez a kliens a következő mechanizmusokat támogatja:\n"
+
+#: src/gsasl.c:621
+#, c-format
+msgid "This server supports the following mechanisms:\n"
+msgstr "Ez a kiszolgáló a következő mechanizmusokat támogatja:\n"
+
+#: src/gsasl.c:689
+#, c-format
+msgid "GnuTLS global initialization failed: %s"
+msgstr "a GnuTLS globális előkészítése nem sikerült: %s"
+
+#: src/gsasl.c:694
+#, c-format
+msgid "GnuTLS initialization failed: %s"
+msgstr "a GnuTLS előkészítése nem sikerült: %s"
+
+#: src/gsasl.c:699
+#, c-format
+msgid "setting GnuTLS defaults failed: %s"
+msgstr "a GnuTLS alapértelmezések beállítása nem sikerült: %s"
+
+#: src/gsasl.c:706
+#, fuzzy, c-format
+msgid "setting GnuTLS server name failed: %s"
+msgstr "a GnuTLS alapértelmezések beállítása nem sikerült: %s"
+
+#: src/gsasl.c:712
+#, c-format
+msgid "allocating anonymous GnuTLS credential: %s"
+msgstr "névtelen GnuTLS hitelesítési adatok lefoglalása: %s"
+
+#: src/gsasl.c:717
+#, c-format
+msgid "setting anonymous GnuTLS credential: %s"
+msgstr "névtelen GnuTLS hitelesítési adatok beállítása: %s"
+
+#: src/gsasl.c:722
+#, c-format
+msgid "allocating X.509 GnuTLS credential: %s"
+msgstr "X.509 GnuTLS hitelesítési adatok lefoglalása: %s"
+
+#: src/gsasl.c:730
+#, c-format
+msgid "loading X.509 GnuTLS credential: %s"
+msgstr "X.509 GnuTLS hitelesítési adatok betöltése: %s"
+
+#: src/gsasl.c:738
+#, c-format
+msgid "no X.509 CAs found: %s"
+msgstr "X.509 CA-k nem találhatók: %s"
+
+#: src/gsasl.c:741
+#, c-format
+msgid "no X.509 CAs found"
+msgstr "X.509 CA-k nem találhatók"
+
+#: src/gsasl.c:747
+#, fuzzy, c-format
+msgid "setting GnuTLS system trust: %s"
+msgstr "a GnuTLS alapértelmezések beállítása nem sikerült: %s"
+
+#: src/gsasl.c:754
+#, c-format
+msgid "setting X.509 GnuTLS credential: %s"
+msgstr "X.509 GnuTLS hitelesítési adatok beállítása: %s"
+
+#: src/gsasl.c:768
+#, c-format
+msgid "setting GnuTLS cipher priority (%s): %s\n"
+msgstr "GnuTLS titkosító prioritás (%s) beállítása: %s\n"
+
+#: src/gsasl.c:794
+#, c-format
+msgid "TLS X.509 Verification: %s\n"
+msgstr ""
+
+#: src/gsasl.c:799
+#, c-format
+msgid "GnuTLS handshake failed: %s"
+msgstr "a GnuTLS kézfogás nem sikerült: %s"
+
+#: src/gsasl.c:810
+#, c-format
+msgid "TLS session info: %s\n"
+msgstr ""
+
+#: src/gsasl.c:831
+#, c-format
+msgid "TLS X.509 Certificate %u: %s\n"
+msgstr ""
+
+#: src/gsasl.c:846
+#, c-format
+msgid "verifying peer certificate: %s"
+msgstr "a partner tanúsítványának ellenőrzése: %s"
+
+#: src/gsasl.c:850
+#, c-format
+msgid "server certificate is not trusted"
+msgstr "a kiszolgáló tanúsítványa nem megbízható"
+
+#: src/gsasl.c:854
+#, c-format
+msgid "server certificate hasn't got a known issuer"
+msgstr "a kiszolgáló tanúsítványának nincs ismert kibocsátója"
+
+#: src/gsasl.c:857
+#, c-format
+msgid "server certificate has been revoked"
+msgstr "a kiszolgáló tanúsítványát visszavonták"
+
+#: src/gsasl.c:861
+#, c-format
+msgid "could not verify server certificate (rc=%u)"
+msgstr "nem sikerült ellenőrizni a kiszolgáló tanúsítványát (rc=%u)"
+
+#: src/gsasl.c:872
+#, c-format
+msgid "getting channel binding failed: %s"
+msgstr "a csatornakötés beszerzése nem sikerült: %s"
+
+#: src/gsasl.c:902
+#, c-format
+msgid "Cannot find mechanism...\n"
+msgstr "Nem található a mechanizmus…\n"
+
+#: src/gsasl.c:919
+#, c-format
+msgid "mechanism unavailable: %s"
+msgstr "a mechanizmus nem érhető el: %s"
+
+#: src/gsasl.c:947
+#, c-format
+msgid "Enter base64 authentication data from client (press RET if none):\n"
+msgstr ""
+"Adja meg a base64 hitelesítési adatokat a kliensről (ha nincs, nyomjon ENTER-"
+"t):\n"
+
+#: src/gsasl.c:950
+#, c-format
+msgid "Enter base64 authentication data from server (press RET if none):\n"
+msgstr ""
+"Adja meg a base64 hitelesítési adatokat a kiszolgálóról (ha nincs, nyomjon "
+"ENTER-t):\n"
+
+#: src/gsasl.c:960
+#, c-format
+msgid "server error"
+msgstr "kiszolgálóhiba"
+
+#: src/gsasl.c:968
+#, c-format
+msgid "mechanism error: %s"
+msgstr "mechanizmushiba: %s"
+
+#: src/gsasl.c:974
+#, c-format
+msgid "Server authentication finished (client trusted)...\n"
+msgstr "A kiszolgáló hitelesítése befejeződött (a kliens megbízható)…\n"
+
+#: src/gsasl.c:977
+#, c-format
+msgid "Client authentication finished (server trusted)...\n"
+msgstr "A kliens hitelesítése befejeződött (a kiszolgáló megbízható)…\n"
+
+#: src/gsasl.c:1002
+#, c-format
+msgid "Enter application data (EOF to finish):\n"
+msgstr "Adja meg az alkalmazás adatait (fájl vége a befejezéshez):\n"
+
+#: src/gsasl.c:1068
+#, c-format
+msgid "Base64 encoded application data to send:\n"
+msgstr "A küldendő base64 kódolású alkalmazás adatok:\n"
+
+#: src/gsasl.c:1107
+#, c-format
+msgid "SASL record too large: %zu\n"
+msgstr "A SASL rekord túl nagy: %zu\n"
+
+#: src/gsasl.c:1131
+#, c-format
+msgid "encoding error: %s"
+msgstr "kódolási hiba: %s"
+
+#: src/gsasl.c:1136
+#, c-format
+msgid "Session finished...\n"
+msgstr "A munkamenet befejeződött…\n"
+
+#: src/gsasl.c:1152
+#, c-format
+msgid "terminating GnuTLS session failed: %s"
+msgstr "a GnuTLS munkamenet megszakítása nem sikerült: %s"
+
+#~ msgid "Chose SASL mechanisms:\n"
+#~ msgstr "SASL mechanizmus választása:\n"
+
+#~ msgid "Choose SASL mechanism:\n"
+#~ msgstr "SASL mechanizmus kiválasztása:\n"

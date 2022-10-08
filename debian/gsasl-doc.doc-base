@@ -1,0 +1,13 @@
+Document: gsasl
+Title: GNU Simple Authentication and Security Layer (SASL) Manual
+Author: Simon Josefsson
+Abstract: Documentation for GNU SASL
+Section: System/Security
+
+Format: HTML
+Index: /usr/share/doc/gsasl/gsasl.html
+Files: /usr/share/doc/gsasl/*.html
+
+Format: info
+Index: /usr/share/info/gsasl.info.gz
+Files: /usr/share/info/gsasl.info*

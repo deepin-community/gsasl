@@ -1,0 +1,37 @@
+#!/bin/sh
+
+set -e
+
+WORKDIR=$(mktemp -d)
+trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
+
+gcc -o $WORKDIR/foo tests/errors.c `pkg-config --cflags --libs libgsasl`
+$WORKDIR/foo
+
+touch $WORKDIR/config.h
+for f in $(ls tests/*.c | grep -v -e gs2-krb5.c -e gssapi.c -e old-base64.c -e errors.c -e utils.c); do
+    echo $f
+    gcc -I$WORKDIR -o $WORKDIR/foo $f tests/utils.c `pkg-config --cflags --libs libgsasl` 2>/dev/null
+    env MD5FILE=tests/cram-md5.pwd $WORKDIR/foo
+done
+
+cd $WORKDIR
+cat <<EOF > libgsasltest.c
+#include <gsasl.h>
+
+int main(void)
+{
+  if (!gsasl_check_version (GSASL_VERSION))
+    return 1;
+
+  return 0;
+}
+EOF
+
+gcc -o libgsasltest libgsasltest.c `pkg-config --cflags --libs libgsasl`
+echo "PASS: gcc"
+[ -x libgsasltest ]
+./libgsasltest
+echo "PASS: run"
+man -P cat gsasl_init
+echo "PASS: man"

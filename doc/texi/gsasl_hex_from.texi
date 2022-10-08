@@ -1,0 +1,19 @@
+@subheading gsasl_hex_from
+@anchor{gsasl_hex_from}
+@deftypefun {int} {gsasl_hex_from} (const char * @var{in}, char ** @var{out}, size_t * @var{outlen})
+@var{in}: input byte array
+
+@var{out}: pointer to newly allocated output byte array
+
+@var{outlen}: pointer to size of newly allocated output byte array
+
+Decode hex data.  The  @code{out} buffer must be deallocated by the
+caller.
+
+Return value: Returns @code{GSASL_OK}  on success, @code{GSASL_BASE64_ERROR}  if
+input was invalid, and @code{GSASL_MALLOC_ERROR}  on memory allocation
+errors.
+
+@strong{Since:} 1.10
+@end deftypefun
+

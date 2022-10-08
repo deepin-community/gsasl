@@ -1,0 +1,420 @@
+# Hungarian translation for libgsasl.
+# Copyright (C) 2014 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gsasl package.
+#
+# Balázs Úr <urbalazs@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: libgsasl 1.7.4\n"
+"Report-Msgid-Bugs-To: bug-gsasl@gnu.org\n"
+"POT-Creation-Date: 2021-01-01 17:34+0100\n"
+"PO-Revision-Date: 2014-06-27 20:54+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: src/error.c:46
+msgid "Libgsasl success"
+msgstr "Libgsasl siker"
+
+#: src/error.c:47
+msgid "SASL mechanism needs more data"
+msgstr "A SASL mechanizmusnak több adatra van szüksége"
+
+#: src/error.c:48
+msgid "Unknown SASL mechanism"
+msgstr "Ismeretlen SASL mechanizmus"
+
+#: src/error.c:50
+msgid "SASL mechanism called too many times"
+msgstr "A SASL mechanizmust túl sokszor hívták meg"
+
+#: src/error.c:52
+msgid "SASL function needs larger buffer (internal error)"
+msgstr "A SASL függvénynek nagyobb pufferre van szüksége (belső hiba)"
+
+#: src/error.c:53
+msgid "Could not open file in SASL library"
+msgstr "Nem sikerült megnyitni a SASL könyvtárban lévő fájlt"
+
+#: src/error.c:54
+msgid "Could not close file in SASL library"
+msgstr "Nem sikerült bezárni a SASL könyvtárban lévő fájlt"
+
+#: src/error.c:55
+msgid "Memory allocation error in SASL library"
+msgstr "Memóriafoglalási hiba a SASL könyvtárban"
+
+#: src/error.c:56
+msgid "Base 64 coding error in SASL library"
+msgstr "Base64 kódolási hiba a SASL könyvtárban"
+
+#: src/error.c:57
+msgid "Low-level crypto error in SASL library"
+msgstr "Alacsony szintű titkosítási hiba a SASL könyvtárban"
+
+#: src/error.c:60
+msgid ""
+"SASL mechanism needs gsasl_client_callback_anonymous() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_client_callback_anonymous() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:63
+msgid ""
+"SASL mechanism needs gsasl_client_callback_password() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_client_callback_password() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:66
+msgid ""
+"SASL mechanism needs gsasl_client_callback_passcode() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_client_callback_passcode() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:69
+msgid ""
+"SASL mechanism needs gsasl_client_callback_pin() callback (application error)"
+msgstr ""
+"A SASL mechanizmus gsasl_client_callback_pin() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:72
+msgid ""
+"SASL mechanism needs gsasl_client_callback_authorization_id() callback "
+"(application error)"
+msgstr ""
+"A SASL mechanizmus gsasl_client_callback_authorization_id() visszahívást "
+"igényel (alkalmazás hiba)"
+
+#: src/error.c:75
+msgid ""
+"SASL mechanism needs gsasl_client_callback_authentication_id() callback "
+"(application error)"
+msgstr ""
+"A SASL mechanizmus gsasl_client_callback_authentication_id() visszahívást "
+"igényel (alkalmazás hiba)"
+
+#: src/error.c:78
+msgid ""
+"SASL mechanism needs gsasl_client_callback_service() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_client_callback_service() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:81
+msgid ""
+"SASL mechanism needs gsasl_server_callback_validate() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_validate() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:84
+msgid ""
+"SASL mechanism needs gsasl_server_callback_cram_md5() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_cram_md5() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:87
+msgid ""
+"SASL mechanism needs gsasl_server_callback_digest_md5() callback "
+"(application error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_digest_md5() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:90
+msgid ""
+"SASL mechanism needs gsasl_server_callback_external() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_external() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:93
+msgid ""
+"SASL mechanism needs gsasl_server_callback_anonymous() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_anonymous() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:96
+msgid ""
+"SASL mechanism needs gsasl_server_callback_realm() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_realm() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:99
+msgid ""
+"SASL mechanism needs gsasl_server_callback_securid() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_securid() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:102
+msgid ""
+"SASL mechanism needs gsasl_server_callback_service() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_service() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:105
+msgid ""
+"SASL mechanism needs gsasl_server_callback_gssapi() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_gssapi() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:108
+msgid ""
+"SASL mechanism needs gsasl_server_callback_retrieve() callback (application "
+"error)"
+msgstr ""
+"A SASL mechanizmus gsasl_server_callback_retrieve() visszahívást igényel "
+"(alkalmazás hiba)"
+
+#: src/error.c:111
+msgid "Failed to perform Unicode Normalization on string."
+msgstr "Nem sikerült végrehajtani a Unicode normalizálást a szövegen."
+
+#: src/error.c:113
+msgid "Could not prepare internationalized (non-ASCII) string."
+msgstr "Nem sikerült előkészíteni a nemzetközivé tett (nem ASCII) szöveget."
+
+#: src/error.c:115
+msgid "SASL mechanism could not parse input"
+msgstr "A SASL mechanizmus nem tudta feldolgozni a bemenetet"
+
+#: src/error.c:116
+msgid "Error authenticating user"
+msgstr "Hiba a felhasználó hitelesítésekor"
+
+#: src/error.c:118
+msgid "Cannot get internal library handle (library error)"
+msgstr "Nem sikerült lekérni a belső könyvtárleírót (könyvtár hiba)"
+
+#: src/error.c:119
+msgid "Integrity error in application payload"
+msgstr "Integritási hiba az alkalmazás hasznos terhében"
+
+#: src/error.c:120
+msgid "No more realms available (non-fatal)"
+msgstr "Több tartomány nem érhető el (nem végzetes)"
+
+#: src/error.c:122
+msgid "Client-side functionality not available in library (application error)"
+msgstr ""
+"A kliens oldali funkcionalitás nem érhető el a könyvtárban (alkalmazás hiba)"
+
+#: src/error.c:125
+msgid "Server-side functionality not available in library (application error)"
+msgstr ""
+"A kiszolgáló oldali funkcionalitás nem érhető el a könyvtárban (alkalmazás "
+"hiba)"
+
+#: src/error.c:128
+msgid ""
+"GSSAPI library could not deallocate memory in gss_release_buffer() in SASL "
+"library.  This is a serious internal error."
+msgstr ""
+"A GSSAPI könyvtár nem tudta felszabadítani a memóriát a SASL könyvtárban "
+"lévő gss_release_buffer() függvényben. Ez egy komoly belső hiba."
+
+#: src/error.c:132
+msgid ""
+"GSSAPI library could not understand a peer name in gss_import_name() in SASL "
+"library.  This is most likely due to incorrect service and/or hostnames."
+msgstr ""
+"A GSSAPI könyvtár nem tudott megérteni egy partner nevet a SASL könyvtárban "
+"lévő gss_import_name() függvényben. Ez leginkább az érvénytelen "
+"szolgáltatásnak és/vagy gépneveknek köszönhető."
+
+#: src/error.c:136
+msgid ""
+"GSSAPI error in client while negotiating security context in "
+"gss_init_sec_context() in SASL library.  This is most likely due "
+"insufficient credentials or malicious interactions."
+msgstr ""
+"GSSAPI hiba történt a kliensben a biztonsági környezet egyeztetése alatt a "
+"SASL könyvtárban lévő gss_init_sec_context() függvényben. Ez leginkább a nem "
+"elegendő hitelesítési adatoknak vagy rosszindulatú kölcsönhatásoknak "
+"köszönhető."
+
+#: src/error.c:140
+msgid ""
+"GSSAPI error in server while negotiating security context in "
+"gss_accept_sec_context() in SASL library.  This is most likely due "
+"insufficient credentials or malicious interactions."
+msgstr ""
+"GSSAPI hiba történt a kiszolgálóban a biztonsági környezet egyeztetése alatt "
+"a SASL könyvtárban lévő gss_accept_sec_context() függvényben. Ez leginkább a "
+"nem elegendő hitelesítési adatoknak vagy rosszindulatú kölcsönhatásoknak "
+"köszönhető."
+
+#: src/error.c:144
+msgid ""
+"GSSAPI error while decrypting or decoding data in gss_unwrap() in SASL "
+"library.  This is most likely due to data corruption."
+msgstr ""
+"GSSAPI hiba történt az adatok visszafejtése vagy dekódolása közben a SASL "
+"könyvtárban lévő gss_unwrap() függvényben. Ez leginkább sérült adatoknak "
+"köszönhető."
+
+#: src/error.c:147
+msgid ""
+"GSSAPI error while encrypting or encoding data in gss_wrap() in SASL library."
+msgstr ""
+"GSSAPI hiba történt az adatok titkosítása vagy kódolása közben a SASL "
+"könyvtárban lévő gss_wrap() függvényben."
+
+#: src/error.c:150
+msgid ""
+"GSSAPI error acquiring credentials in gss_acquire_cred() in SASL library.  "
+"This is most likely due to not having the proper Kerberos key available in /"
+"etc/krb5.keytab on the server."
+msgstr ""
+"GSSAPI hiba a hitelesítési adatok beszerzése közben a SASL könyvtárban lévő "
+"gss_acquire_cred() függvényben. Ez leginkább annak köszönhető, hogy nem "
+"rendelkezik a megfelelő Kerberos kulccsal, amely a kiszolgálón a /etc/krb5."
+"keytab fájlban érhető el."
+
+#: src/error.c:154
+msgid ""
+"GSSAPI error creating a display name denoting the client in "
+"gss_display_name() in SASL library.  This is probably because the client "
+"supplied bad data."
+msgstr ""
+"GSSAPI hiba történt a klienst jelölő megjelenítési név létrehozása közben a "
+"SASL könyvtárban lévő gss_display_name() függvényben. Ez valószínűleg azért "
+"történt, mert a kliens rossz adatokat adott meg."
+
+#: src/error.c:158
+msgid ""
+"Other entity requested integrity or confidentiality protection in GSSAPI "
+"mechanism but this is currently not implemented."
+msgstr ""
+"Másik entitás kért integritási vagy titoktartási védelmet a GSSAPI "
+"mechanizmusban, de ez jelenleg nincs megvalósítva."
+
+#: src/error.c:161
+msgid "Kerberos V5 initialization failure."
+msgstr "Kerberos V5 előkészítési hiba."
+
+#: src/error.c:163
+msgid "Kerberos V5 internal error."
+msgstr "Belső Kerberos V5 hiba."
+
+#: src/error.c:165
+msgid "SecurID needs additional passcode."
+msgstr "A SecurID további jelkódot igényel."
+
+#: src/error.c:167
+msgid "SecurID needs new pin."
+msgstr "A SecurID új PIN-t igényel."
+
+#: src/error.c:169
+msgid "The provided library handle was invalid (application error)"
+msgstr "A megadott könyvtárleíró érvénytelen volt (alkalmazás hiba)"
+
+#: src/error.c:171
+msgid "No callback specified by caller (application error)."
+msgstr "Nincs hívó által megadott visszahívás (alkalmazás hiba)."
+
+#: src/error.c:173
+msgid "Authentication failed because the anonymous token was not provided."
+msgstr "A hitelesítés nem sikerült, mert a névtelen token nem lett megadva."
+
+#: src/error.c:176
+msgid ""
+"Authentication failed because the authentication identity was not provided."
+msgstr ""
+"A hitelesítés nem sikerült, mert a hitelesítési azonosító nem lett megadva."
+
+#: src/error.c:179
+msgid ""
+"Authentication failed because the authorization identity was not provided."
+msgstr ""
+"A hitelesítés nem sikerült, mert a felhatalmazási azonosító nem lett megadva."
+
+#: src/error.c:182
+msgid "Authentication failed because the password was not provided."
+msgstr "A hitelesítés nem sikerült, mert a jelszó nem lett megadva."
+
+#: src/error.c:184
+msgid "Authentication failed because the passcode was not provided."
+msgstr "A hitelesítés nem sikerült, mert a jelkód nem lett megadva."
+
+#: src/error.c:186
+msgid "Authentication failed because the pin code was not provided."
+msgstr "A hitelesítés nem sikerült, mert a PIN-kód nem lett megadva."
+
+#: src/error.c:188
+msgid "Authentication failed because the service name was not provided."
+msgstr "A hitelesítés nem sikerült, mert a szolgáltatás neve nem lett megadva."
+
+#: src/error.c:190
+msgid "Authentication failed because the host name was not provided."
+msgstr "A hitelesítés nem sikerült, mert a gép neve nem lett megadva."
+
+#: src/error.c:192
+msgid "GSSAPI error encapsulating token."
+msgstr "GSSAPI hiba a token egységbe zárása közben."
+
+#: src/error.c:194
+msgid "GSSAPI error decapsulating token."
+msgstr "GSSAPI hiba a token kibontása közben."
+
+#: src/error.c:196
+msgid "GSSAPI error getting OID for SASL mechanism name."
+msgstr "GSSAPI hiba az OID lekérése közben a SASL mechanizmus nevéhez."
+
+#: src/error.c:198
+msgid "GSSAPI error testing for OID in OID set."
+msgstr "GSSAPI hiba az OID tesztelése közben az OID beállításban."
+
+#: src/error.c:200
+msgid "GSSAPI error releasing OID set."
+msgstr "GSSAPI hiba az OID beállítás elengedése közben."
+
+#: src/error.c:202
+msgid "Authentication failed because a tls-unique CB was not provided."
+msgstr "A hitelesítés nem sikerült, mert az egyedi TLS CB nem lett megadva."
+
+#: src/error.c:204
+msgid "Callback failed to provide SAML20 IdP identifier."
+msgstr "A visszahívásnak nem sikerült biztosítania a SAML20 IdP azonosítót."
+
+#: src/error.c:206
+msgid "Callback failed to provide SAML20 redirect URL."
+msgstr ""
+"A visszahívásnak nem sikerült biztosítania a SAML20 átirányítási URL-t."
+
+#: src/error.c:208
+msgid "Callback failed to provide OPENID20 redirect URL."
+msgstr ""
+"A visszahívásnak nem sikerült biztosítania az OPENID20 átirányítási URL-t."
+
+#: src/error.c:230
+msgid "Libgsasl unknown error"
+msgstr "Ismeretlen libgsasl hiba"

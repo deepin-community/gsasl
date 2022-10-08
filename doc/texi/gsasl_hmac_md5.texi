@@ -1,0 +1,21 @@
+@subheading gsasl_hmac_md5
+@anchor{gsasl_hmac_md5}
+@deftypefun {int} {gsasl_hmac_md5} (const char * @var{key}, size_t @var{keylen}, const char * @var{in}, size_t @var{inlen}, char * [] @var{outhash})
+@var{key}: input character array with key to use.
+
+@var{keylen}: length of input character array with key to use.
+
+@var{in}: input character array of data to hash.
+
+@var{inlen}: length of input character array of data to hash.
+
+@var{outhash}: newly allocated 16-byte character array with keyed hash of data.
+
+Compute keyed checksum of data using HMAC-MD5.  The  @code{outhash} buffer
+must be deallocated by the caller.
+
+Return value: Returns @code{GSASL_OK}  iff successful.
+
+@strong{Deprecated:} Use a crypto library.
+@end deftypefun
+

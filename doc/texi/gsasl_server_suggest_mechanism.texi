@@ -1,0 +1,17 @@
+@subheading gsasl_server_suggest_mechanism
+@anchor{gsasl_server_suggest_mechanism}
+@deftypefun {const char *} {gsasl_server_suggest_mechanism} (const char *mechlist @var{_GL_UNUSED}, const char *mechlist @var{_GL_UNUSED})
+@var{_GL_UNUSED}: -- undescribed --
+
+@var{_GL_UNUSED}: -- undescribed --
+
+Get name of "best" SASL mechanism supported by the libgsasl server
+which is present in the input string.
+
+Return value: Returns name of "best" SASL mechanism supported by
+the libgsasl server which is present in the input string.
+
+@strong{Deprecated:} This function was never useful, since it is the client
+that chose which mechanism to use.
+@end deftypefun
+

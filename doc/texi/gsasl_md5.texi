@@ -1,0 +1,17 @@
+@subheading gsasl_md5
+@anchor{gsasl_md5}
+@deftypefun {int} {gsasl_md5} (const char * @var{in}, size_t @var{inlen}, char * [] @var{out})
+@var{in}: input character array of data to hash.
+
+@var{inlen}: length of input character array of data to hash.
+
+@var{out}: newly allocated 16-byte character array with hash of data.
+
+Compute hash of data using MD5.  The  @code{out} buffer must be
+deallocated by the caller.
+
+Return value: Returns @code{GSASL_OK}  iff successful.
+
+@strong{Deprecated:} Use a crypto library.
+@end deftypefun
+

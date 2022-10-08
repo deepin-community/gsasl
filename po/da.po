@@ -1,0 +1,317 @@
+# Danish translation gsasl.
+# Copyright (C) 2015 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gsasl package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gsasl 1.7.4\n"
+"Report-Msgid-Bugs-To: bug-gsasl@gnu.org\n"
+"POT-Creation-Date: 2021-01-01 17:35+0100\n"
+"PO-Revision-Date: 2015-05-01 18:00+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+#: src/imap.c:76 src/smtp.c:79 src/gsasl.c:255
+#, fuzzy, c-format
+msgid "Input list of SASL mechanisms:\n"
+msgstr "Inddataliste for SASL-mekanismer understøttet af serveren:\n"
+
+#: src/imap.c:106 src/smtp.c:113 src/gsasl.c:283
+#, c-format
+msgid "Using mechanism:\n"
+msgstr "Bruger mekanisme:\n"
+
+#: src/imap.c:186
+#, fuzzy, c-format
+msgid "warning: server did not return a token\n"
+msgstr "fejl: server returnerede ikke et symbol\n"
+
+#: src/smtp.c:192
+#, c-format
+msgid ""
+"error: could not parse server data:\n"
+"%s\n"
+msgstr ""
+"fejl: kunne ikke fortolke serverdata:\n"
+"%s\n"
+
+#: src/gsasl.c:264
+#, c-format
+msgid "Input list of SASL mechanisms supported by server:\n"
+msgstr "Inddataliste for SASL-mekanismer understøttet af serveren:\n"
+
+#: src/gsasl.c:300
+#, c-format
+msgid "Output from server:\n"
+msgstr "Uddata fra serveren:\n"
+
+#: src/gsasl.c:302
+#, c-format
+msgid "Output from client:\n"
+msgstr "Uddata fra klienten:\n"
+
+#: src/gsasl.c:349
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Prøv »%s --help« for yderligere information.\n"
+
+#: src/gsasl.c:381
+#, c-format
+msgid "required --mechanism missing"
+msgstr ""
+
+#: src/gsasl.c:394
+#, c-format
+msgid "unsupported --mechanism for --mkpasswd: %s"
+msgstr ""
+
+#: src/gsasl.c:398
+#, c-format
+msgid "iteration count must be positive: %d"
+msgstr ""
+
+#: src/gsasl.c:424
+msgid "Enter password: "
+msgstr ""
+
+#: src/gsasl.c:509
+#, c-format
+msgid "missing argument"
+msgstr "mangler argument"
+
+#: src/gsasl.c:516
+#, c-format
+msgid "need both --x509-cert-file and --x509-key-file"
+msgstr "kræver både --x509-cert-file og --x509-key-file"
+
+#: src/gsasl.c:520
+#, c-format
+msgid "cannot use both --starttls and --no-starttls"
+msgstr "kan ikke bruge både --starttls og --no-starttls"
+
+#: src/gsasl.c:523
+#, c-format
+msgid "cannot use both --smtp and --imap"
+msgstr "kan ikke bruge både --smtp og --imap"
+
+#: src/gsasl.c:576
+#, fuzzy, c-format
+msgid "cannot guess SASL profile (try --smtp or --imap)"
+msgstr "kan ikke bruge både --smtp og --imap"
+
+#: src/gsasl.c:596
+#, c-format
+msgid "initialization failure: %s"
+msgstr "initialiseringsfejl: %s"
+
+#: src/gsasl.c:611
+#, c-format
+msgid "error listing mechanisms: %s"
+msgstr "fejl ved visning af mekanismer: %s"
+
+#: src/gsasl.c:618
+#, c-format
+msgid "This client supports the following mechanisms:\n"
+msgstr "Denne klient understøtter de følgende mekanismer:\n"
+
+#: src/gsasl.c:621
+#, c-format
+msgid "This server supports the following mechanisms:\n"
+msgstr "Denne server understøtter de følgende mekanismer:\n"
+
+#: src/gsasl.c:689
+#, c-format
+msgid "GnuTLS global initialization failed: %s"
+msgstr "GnuTLS global initialisering mislykkedes: %s"
+
+#: src/gsasl.c:694
+#, c-format
+msgid "GnuTLS initialization failed: %s"
+msgstr "GnuTLS-initialisering mislykkedes: %s"
+
+#: src/gsasl.c:699
+#, c-format
+msgid "setting GnuTLS defaults failed: %s"
+msgstr "angivelse af GnuTLS-standarder mislykkedes: %s"
+
+#: src/gsasl.c:706
+#, fuzzy, c-format
+msgid "setting GnuTLS server name failed: %s"
+msgstr "angivelse af GnuTLS-standarder mislykkedes: %s"
+
+#: src/gsasl.c:712
+#, c-format
+msgid "allocating anonymous GnuTLS credential: %s"
+msgstr "allokerer anonym GnuTLS-akkreditiv: %s"
+
+#: src/gsasl.c:717
+#, c-format
+msgid "setting anonymous GnuTLS credential: %s"
+msgstr "angiver anonym GnuTLS-akkreditiv: %s"
+
+#: src/gsasl.c:722
+#, c-format
+msgid "allocating X.509 GnuTLS credential: %s"
+msgstr "allokerer X.509 GnuTLS-akkreditiv: %s"
+
+#: src/gsasl.c:730
+#, c-format
+msgid "loading X.509 GnuTLS credential: %s"
+msgstr "indlæser X.509 GnuTLS-akkreditiv: %s"
+
+#: src/gsasl.c:738
+#, c-format
+msgid "no X.509 CAs found: %s"
+msgstr "ingen X.509 CA'er blev fundet: %s"
+
+#: src/gsasl.c:741
+#, c-format
+msgid "no X.509 CAs found"
+msgstr "ingen X.509 CA'er blev fundet"
+
+#: src/gsasl.c:747
+#, fuzzy, c-format
+msgid "setting GnuTLS system trust: %s"
+msgstr "angivelse af GnuTLS-standarder mislykkedes: %s"
+
+#: src/gsasl.c:754
+#, c-format
+msgid "setting X.509 GnuTLS credential: %s"
+msgstr "angiver X.509 GnuTLS-akkreditiv: %s"
+
+#: src/gsasl.c:768
+#, c-format
+msgid "setting GnuTLS cipher priority (%s): %s\n"
+msgstr "angiver prioritet for GnuTLS-krypteringsalgoritme (%s): %s\n"
+
+#: src/gsasl.c:794
+#, c-format
+msgid "TLS X.509 Verification: %s\n"
+msgstr ""
+
+#: src/gsasl.c:799
+#, c-format
+msgid "GnuTLS handshake failed: %s"
+msgstr "GnuTLS-håndtryk mislykkedes: %s"
+
+#: src/gsasl.c:810
+#, c-format
+msgid "TLS session info: %s\n"
+msgstr ""
+
+#: src/gsasl.c:831
+#, c-format
+msgid "TLS X.509 Certificate %u: %s\n"
+msgstr ""
+
+#: src/gsasl.c:846
+#, c-format
+msgid "verifying peer certificate: %s"
+msgstr "verificerer modpartcertifikat: %s"
+
+#: src/gsasl.c:850
+#, c-format
+msgid "server certificate is not trusted"
+msgstr "servercertifikat er ikke troværdigt"
+
+#: src/gsasl.c:854
+#, c-format
+msgid "server certificate hasn't got a known issuer"
+msgstr "servercertifikat har ikke en kendt udsteder"
+
+#: src/gsasl.c:857
+#, c-format
+msgid "server certificate has been revoked"
+msgstr "servercertifikat er blevet tilbagekaldt"
+
+#: src/gsasl.c:861
+#, fuzzy, c-format
+msgid "could not verify server certificate (rc=%u)"
+msgstr "kunne ikke verificere servercertifikat (rc=%d)"
+
+#: src/gsasl.c:872
+#, c-format
+msgid "getting channel binding failed: %s"
+msgstr "hentning af kanalbinding mislykkedes: %s"
+
+#: src/gsasl.c:902
+#, c-format
+msgid "Cannot find mechanism...\n"
+msgstr "Kan ikke finde mekanisme ...\n"
+
+#: src/gsasl.c:919
+#, c-format
+msgid "mechanism unavailable: %s"
+msgstr "mekanisme utilgængelig: %s"
+
+#: src/gsasl.c:947
+#, c-format
+msgid "Enter base64 authentication data from client (press RET if none):\n"
+msgstr "Indtast base64-godkendelsesdata fra klienten (tast RET hvis ingen):\n"
+
+#: src/gsasl.c:950
+#, c-format
+msgid "Enter base64 authentication data from server (press RET if none):\n"
+msgstr "Indtast base64-godkendelsesdata fra serveren (tast RET hvis ingen):\n"
+
+#: src/gsasl.c:960
+#, c-format
+msgid "server error"
+msgstr "serverfejl"
+
+#: src/gsasl.c:968
+#, c-format
+msgid "mechanism error: %s"
+msgstr "mekanismefejl: %s"
+
+#: src/gsasl.c:974
+#, c-format
+msgid "Server authentication finished (client trusted)...\n"
+msgstr "Servergodkendelse afsluttet (klient troværdig) ...\n"
+
+#: src/gsasl.c:977
+#, c-format
+msgid "Client authentication finished (server trusted)...\n"
+msgstr "Klientgodkendelse afsluttet (server troværdig) ...\n"
+
+#: src/gsasl.c:1002
+#, c-format
+msgid "Enter application data (EOF to finish):\n"
+msgstr "Indtast programdata (EOF for at afslutte):\n"
+
+#: src/gsasl.c:1068
+#, c-format
+msgid "Base64 encoded application data to send:\n"
+msgstr "Base64-kodede programdata at sende:\n"
+
+#: src/gsasl.c:1107
+#, c-format
+msgid "SASL record too large: %zu\n"
+msgstr "SASL-post er for stor: %zu\n"
+
+#: src/gsasl.c:1131
+#, c-format
+msgid "encoding error: %s"
+msgstr "kodningsfejl: %s"
+
+#: src/gsasl.c:1136
+#, c-format
+msgid "Session finished...\n"
+msgstr "Session afsluttet ...\n"
+
+#: src/gsasl.c:1152
+#, c-format
+msgid "terminating GnuTLS session failed: %s"
+msgstr "afslutning af GnuTLS-session mislykkedes: %s"
+
+#~ msgid "Chose SASL mechanisms:\n"
+#~ msgstr "Vælg SASL-mekanismer:\n"
+
+#~ msgid "Choose SASL mechanism:\n"
+#~ msgstr "Vælg SASL-mekanisme:\n"

@@ -1,0 +1,19 @@
+@subheading gsasl_sha1
+@anchor{gsasl_sha1}
+@deftypefun {int} {gsasl_sha1} (const char * @var{in}, size_t @var{inlen}, char * [] @var{out})
+@var{in}: input character array of data to hash.
+
+@var{inlen}: length of input character array of data to hash.
+
+@var{out}: newly allocated 20-byte character array with hash of data.
+
+Compute hash of data using SHA1.  The  @code{out} buffer must be
+deallocated by the caller.
+
+Return value: Returns @code{GSASL_OK}  iff successful.
+
+@strong{Since:} 1.3
+
+@strong{Deprecated:} Use a crypto library.
+@end deftypefun
+

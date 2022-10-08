@@ -1,0 +1,6 @@
+Tests: libgsasl
+Depends: build-essential, libgsasl-dev, man, pkg-config
+
+Tests: gsasl
+Depends: build-essential, gsasl, man
+Restrictions: superficial

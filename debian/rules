@@ -1,0 +1,46 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DOPACKAGES = $(shell dh_listpackages)
+
+%:
+	dh $@ --builddirectory=build \
+		-O--dbgsym-migration="gsasl-dbg (<< 1.8.0-9~)"
+
+override_dh_autoreconf:
+ifneq ($(filter gsasl-doc,$(DOPACKAGES)),)
+	dh_autoreconf
+else
+	GTKDOCIZE=true dh_autoreconf
+endif
+
+CONFIGURE_FLAGS = \
+		--disable-rpath \
+		--disable-valgrind-tests \
+		--without-libgcrypt \
+		--with-gssapi-impl=mit \
+		--with-packager=Debian \
+		--with-packager-version=$(DEB_VERSION) \
+		--with-packager-bug-reports=https://bugs.debian.org/
+ifneq ($(filter gsasl-doc,$(DOPACKAGES)),)
+CONFIGURE_FLAGS += --enable-gtk-doc
+else
+CONFIGURE_FLAGS += --disable-gtk-doc
+endif
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CONFIGURE_FLAGS)
+
+override_dh_auto_build:
+	dh_auto_build
+ifneq ($(filter gsasl-doc,$(DOPACKAGES)),)
+	rm -f doc/gsasl.html
+	make -C build/doc gsasl.html
+endif
+
+override_dh_auto_install:
+	dh_auto_install
+	find debian/tmp -name "*.la" -exec \
+		sed -i -e "s,^dependency_libs=.*,dependency_libs=''," {} +

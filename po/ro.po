@@ -1,0 +1,319 @@
+# Mesajele în limba românã pentru gsasl.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Acest fiºier este distribuit sub aceeaºi licenþã ca ºi pachetul gsasl.
+# Laurentiu Buzdugan <lbuz@rolix.org>, 2003,2004.
+#
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gsasl 0.2.2\n"
+"Report-Msgid-Bugs-To: bug-gsasl@gnu.org\n"
+"POT-Creation-Date: 2021-01-01 17:35+0100\n"
+"PO-Revision-Date: 2004-12-29 12:00-0500\n"
+"Last-Translator: Laurentiu Buzdugan <lbuz@rolix.org>\n"
+"Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/imap.c:76 src/smtp.c:79 src/gsasl.c:255
+#, fuzzy, c-format
+msgid "Input list of SASL mechanisms:\n"
+msgstr "Alegeþi mecanismul SASL:\n"
+
+#: src/imap.c:106 src/smtp.c:113 src/gsasl.c:283
+#, c-format
+msgid "Using mechanism:\n"
+msgstr "Folosind mecanismul:\n"
+
+#: src/imap.c:186
+#, c-format
+msgid "warning: server did not return a token\n"
+msgstr ""
+
+#: src/smtp.c:192
+#, c-format
+msgid ""
+"error: could not parse server data:\n"
+"%s\n"
+msgstr ""
+
+#: src/gsasl.c:264
+#, fuzzy, c-format
+msgid "Input list of SASL mechanisms supported by server:\n"
+msgstr "Introduceþi mecanismul SASL suportat de server:\n"
+
+#: src/gsasl.c:300
+#, c-format
+msgid "Output from server:\n"
+msgstr "Ieºirea de la server:\n"
+
+#: src/gsasl.c:302
+#, c-format
+msgid "Output from client:\n"
+msgstr "Ieºirea de la client:\n"
+
+#: src/gsasl.c:349
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr ""
+
+#: src/gsasl.c:381
+#, c-format
+msgid "required --mechanism missing"
+msgstr ""
+
+#: src/gsasl.c:394
+#, c-format
+msgid "unsupported --mechanism for --mkpasswd: %s"
+msgstr ""
+
+#: src/gsasl.c:398
+#, c-format
+msgid "iteration count must be positive: %d"
+msgstr ""
+
+#: src/gsasl.c:424
+msgid "Enter password: "
+msgstr ""
+
+#: src/gsasl.c:509
+#, c-format
+msgid "missing argument"
+msgstr ""
+
+#: src/gsasl.c:516
+#, c-format
+msgid "need both --x509-cert-file and --x509-key-file"
+msgstr ""
+
+#: src/gsasl.c:520
+#, c-format
+msgid "cannot use both --starttls and --no-starttls"
+msgstr ""
+
+#: src/gsasl.c:523
+#, c-format
+msgid "cannot use both --smtp and --imap"
+msgstr ""
+
+#: src/gsasl.c:576
+#, c-format
+msgid "cannot guess SASL profile (try --smtp or --imap)"
+msgstr ""
+
+#: src/gsasl.c:596
+#, c-format
+msgid "initialization failure: %s"
+msgstr ""
+
+#: src/gsasl.c:611
+#, fuzzy, c-format
+msgid "error listing mechanisms: %s"
+msgstr "Folosind mecanismul:\n"
+
+#: src/gsasl.c:618
+#, c-format
+msgid "This client supports the following mechanisms:\n"
+msgstr "Acest client suportã urmãtoarele mecanisme:\n"
+
+#: src/gsasl.c:621
+#, c-format
+msgid "This server supports the following mechanisms:\n"
+msgstr "Acest server suportã urmãtoarele mecanisme:\n"
+
+#: src/gsasl.c:689
+#, c-format
+msgid "GnuTLS global initialization failed: %s"
+msgstr ""
+
+#: src/gsasl.c:694
+#, c-format
+msgid "GnuTLS initialization failed: %s"
+msgstr ""
+
+#: src/gsasl.c:699
+#, c-format
+msgid "setting GnuTLS defaults failed: %s"
+msgstr ""
+
+#: src/gsasl.c:706
+#, c-format
+msgid "setting GnuTLS server name failed: %s"
+msgstr ""
+
+#: src/gsasl.c:712
+#, c-format
+msgid "allocating anonymous GnuTLS credential: %s"
+msgstr ""
+
+#: src/gsasl.c:717
+#, c-format
+msgid "setting anonymous GnuTLS credential: %s"
+msgstr ""
+
+#: src/gsasl.c:722
+#, c-format
+msgid "allocating X.509 GnuTLS credential: %s"
+msgstr ""
+
+#: src/gsasl.c:730
+#, c-format
+msgid "loading X.509 GnuTLS credential: %s"
+msgstr ""
+
+#: src/gsasl.c:738
+#, c-format
+msgid "no X.509 CAs found: %s"
+msgstr ""
+
+#: src/gsasl.c:741
+#, c-format
+msgid "no X.509 CAs found"
+msgstr ""
+
+#: src/gsasl.c:747
+#, c-format
+msgid "setting GnuTLS system trust: %s"
+msgstr ""
+
+#: src/gsasl.c:754
+#, c-format
+msgid "setting X.509 GnuTLS credential: %s"
+msgstr ""
+
+#: src/gsasl.c:768
+#, c-format
+msgid "setting GnuTLS cipher priority (%s): %s\n"
+msgstr ""
+
+#: src/gsasl.c:794
+#, c-format
+msgid "TLS X.509 Verification: %s\n"
+msgstr ""
+
+#: src/gsasl.c:799
+#, c-format
+msgid "GnuTLS handshake failed: %s"
+msgstr ""
+
+#: src/gsasl.c:810
+#, c-format
+msgid "TLS session info: %s\n"
+msgstr ""
+
+#: src/gsasl.c:831
+#, c-format
+msgid "TLS X.509 Certificate %u: %s\n"
+msgstr ""
+
+#: src/gsasl.c:846
+#, c-format
+msgid "verifying peer certificate: %s"
+msgstr ""
+
+#: src/gsasl.c:850
+#, fuzzy, c-format
+msgid "server certificate is not trusted"
+msgstr "Autentificarea clientului a fost terminatã (client de încredere)...\n"
+
+#: src/gsasl.c:854
+#, c-format
+msgid "server certificate hasn't got a known issuer"
+msgstr ""
+
+#: src/gsasl.c:857
+#, c-format
+msgid "server certificate has been revoked"
+msgstr ""
+
+#: src/gsasl.c:861
+#, c-format
+msgid "could not verify server certificate (rc=%u)"
+msgstr ""
+
+#: src/gsasl.c:872
+#, c-format
+msgid "getting channel binding failed: %s"
+msgstr ""
+
+#: src/gsasl.c:902
+#, c-format
+msgid "Cannot find mechanism...\n"
+msgstr "Nu pot gãsi mecanismul...\n"
+
+#: src/gsasl.c:919
+#, c-format
+msgid "mechanism unavailable: %s"
+msgstr ""
+
+#: src/gsasl.c:947
+#, c-format
+msgid "Enter base64 authentication data from client (press RET if none):\n"
+msgstr ""
+"Introduceþi datele de autentificare base64 de la client (apãsaþi  RET dacã "
+"nu existã):\n"
+
+#: src/gsasl.c:950
+#, c-format
+msgid "Enter base64 authentication data from server (press RET if none):\n"
+msgstr ""
+"Introduceþi datele de autentificare base64 de la server (apãsaþi  RET dacã "
+"nu existã):\n"
+
+#: src/gsasl.c:960
+#, c-format
+msgid "server error"
+msgstr ""
+
+#: src/gsasl.c:968
+#, c-format
+msgid "mechanism error: %s"
+msgstr ""
+
+#: src/gsasl.c:974
+#, c-format
+msgid "Server authentication finished (client trusted)...\n"
+msgstr "Autentificarea clientului a fost terminatã (client de încredere)...\n"
+
+#: src/gsasl.c:977
+#, c-format
+msgid "Client authentication finished (server trusted)...\n"
+msgstr "Autentificarea clientului a fost terminatã (server de încredere)...\n"
+
+#: src/gsasl.c:1002
+#, c-format
+msgid "Enter application data (EOF to finish):\n"
+msgstr "Introduceþi datele aplicaþiei (EOF pentru a termina):\n"
+
+#: src/gsasl.c:1068
+#, c-format
+msgid "Base64 encoded application data to send:\n"
+msgstr "Datele aplicaþiei encodate Base64 de trimis:\n"
+
+#: src/gsasl.c:1107
+#, c-format
+msgid "SASL record too large: %zu\n"
+msgstr ""
+
+#: src/gsasl.c:1131
+#, c-format
+msgid "encoding error: %s"
+msgstr ""
+
+#: src/gsasl.c:1136
+#, c-format
+msgid "Session finished...\n"
+msgstr "Sesiune terminatã...\n"
+
+#: src/gsasl.c:1152
+#, c-format
+msgid "terminating GnuTLS session failed: %s"
+msgstr ""
+
+#~ msgid "Libgsasl error (%d): %s"
+#~ msgstr "Eroare libgsasl (%d): %s"
